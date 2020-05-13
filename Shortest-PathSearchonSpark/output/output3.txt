@@ -1,0 +1,1829 @@
+2019-11-23 21:35:48 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-23 21:35:49 INFO  SparkContext:54 - Running Spark version 2.3.1
+2019-11-23 21:35:49 INFO  SparkContext:54 - Submitted application: BFS-based Shortest Path Search
+2019-11-23 21:35:49 INFO  SecurityManager:54 - Changing view acls to: yifengzh_css534
+2019-11-23 21:35:49 INFO  SecurityManager:54 - Changing modify acls to: yifengzh_css534
+2019-11-23 21:35:49 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-11-23 21:35:49 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-11-23 21:35:49 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yifengzh_css534); groups with view permissions: Set(); users  with modify permissions: Set(yifengzh_css534); groups with modify permissions: Set()
+2019-11-23 21:35:49 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 33416.
+2019-11-23 21:35:49 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-11-23 21:35:49 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-11-23 21:35:49 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-11-23 21:35:49 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-11-23 21:35:49 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-0bd8a2ae-334c-4ecc-83dc-5d533ff6a42a
+2019-11-23 21:35:49 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2019-11-23 21:35:50 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-11-23 21:35:50 INFO  log:192 - Logging initialized @6592ms
+2019-11-23 21:35:50 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2019-11-23 21:35:50 INFO  Server:414 - Started @6986ms
+2019-11-23 21:35:50 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2019-11-23 21:35:50 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+2019-11-23 21:35:50 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+2019-11-23 21:35:50 INFO  AbstractConnector:278 - Started ServerConnector@5769e7ae{HTTP/1.1,[http/1.1]}{0.0.0.0:4043}
+2019-11-23 21:35:50 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4043.
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@62da83ed{/jobs,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@30c31dd7{/jobs/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@499b2a5c{/jobs/job,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@c1fca1e{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@241a53ef{/stages,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@344344fa{/stages/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2db2cd5{/stages/stage,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@285f09de{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@73393584{/stages/pool,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@31500940{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1827a871{/storage,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48e64352{/storage/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7249dadf{/storage/rdd,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4362d7df{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@66238be2{/environment,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c25b8a7{/environment/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@200606de{/executors,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@750fe12e{/executors/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f8908f6{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3e587920{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2ef8a8c3{/static,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5ed190be{/,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@402f80f5{/api,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7dac3fd8{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@425357dd{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-11-23 21:35:50 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://cssmpi1.uwb.edu:4043
+2019-11-23 21:35:50 INFO  SparkContext:54 - Added JAR file:/home/yifengzh_css534/Spark/ShortestPath.jar at spark://cssmpi1.uwb.edu:33416/jars/ShortestPath.jar with timestamp 1574573750976
+2019-11-23 21:35:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://cssmpi1.uwb.edu:58350...
+2019-11-23 21:35:51 INFO  TransportClientFactory:267 - Successfully created connection to cssmpi1.uwb.edu/172.28.203.196:58350 after 88 ms (0 ms spent in bootstraps)
+2019-11-23 21:35:51 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20191123213551-0002
+2019-11-23 21:35:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20191123213551-0002/0 on worker-20191123212100-172.28.203.196-36809 (172.28.203.196:36809) with 3 core(s)
+2019-11-23 21:35:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20191123213551-0002/0 on hostPort 172.28.203.196:36809 with 3 core(s), 1024.0 MB RAM
+2019-11-23 21:35:51 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34839.
+2019-11-23 21:35:51 INFO  NettyBlockTransferService:54 - Server created on cssmpi1.uwb.edu:34839
+2019-11-23 21:35:51 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-11-23 21:35:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20191123213551-0002/0 is now RUNNING
+2019-11-23 21:35:52 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, cssmpi1.uwb.edu, 34839, None)
+2019-11-23 21:35:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager cssmpi1.uwb.edu:34839 with 366.3 MB RAM, BlockManagerId(driver, cssmpi1.uwb.edu, 34839, None)
+2019-11-23 21:35:52 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, cssmpi1.uwb.edu, 34839, None)
+2019-11-23 21:35:52 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, cssmpi1.uwb.edu, 34839, None)
+2019-11-23 21:35:52 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@cda0432{/metrics/json,null,AVAILABLE,@Spark}
+2019-11-23 21:35:52 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2019-11-23 21:35:54 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 236.7 KB, free 366.1 MB)
+2019-11-23 21:35:54 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 366.0 MB)
+2019-11-23 21:35:54 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 22.9 KB, free: 366.3 MB)
+2019-11-23 21:35:54 INFO  SparkContext:54 - Created broadcast 0 from textFile at ShortestPath.java:36
+2019-11-23 21:35:54 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-11-23 21:35:54 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:67
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Got job 0 (count at ShortestPath.java:67) with 2 output partitions
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (count at ShortestPath.java:67)
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Missing parents: List()
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[2] at mapToPair at ShortestPath.java:42), which has no missing parents
+2019-11-23 21:35:54 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 366.0 MB)
+2019-11-23 21:35:54 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 366.0 MB)
+2019-11-23 21:35:54 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.3 KB, free: 366.3 MB)
+2019-11-23 21:35:54 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:35:54 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at mapToPair at ShortestPath.java:42) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:35:54 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 2 tasks
+2019-11-23 21:35:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.28.203.196:58096) with ID 0
+2019-11-23 21:35:58 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7893 bytes)
+2019-11-23 21:35:58 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7893 bytes)
+2019-11-23 21:35:58 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.28.203.196:45785 with 366.3 MB RAM, BlockManagerId(0, 172.28.203.196, 45785, None)
+2019-11-23 21:35:59 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 172.28.203.196:45785 (size: 2.3 KB, free: 366.3 MB)
+2019-11-23 21:36:00 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.28.203.196:45785 (size: 22.9 KB, free: 366.3 MB)
+2019-11-23 21:36:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 3625 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 3632 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - ResultStage 0 (count at ShortestPath.java:67) finished in 7.524 s
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Job 0 finished: count at ShortestPath.java:67, took 7.710583 s
+The total vertex number = 3000
+2019-11-23 21:36:02 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Got job 1 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (count at ShortestPath.java:74)
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Missing parents: List()
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[3] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:36:02 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 4.4 KB, free 366.0 MB)
+2019-11-23 21:36:02 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:02 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:02 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:02 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:02 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 2 tasks
+2019-11-23 21:36:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 2, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7893 bytes)
+2019-11-23 21:36:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 3, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7893 bytes)
+2019-11-23 21:36:02 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:04 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 3) in 2056 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:04 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 2) in 2057 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:04 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - ResultStage 1 (count at ShortestPath.java:74) finished in 2.089 s
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Job 1 finished: count at ShortestPath.java:74, took 2.111340 s
+2019-11-23 21:36:04 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Registering RDD 4 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Got job 2 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (count at ShortestPath.java:74)
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[4] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:36:04 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 5.6 KB, free 366.0 MB)
+2019-11-23 21:36:04 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.1 KB, free 366.0 MB)
+2019-11-23 21:36:04 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:36:04 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:04 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[4] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:04 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 2 tasks
+2019-11-23 21:36:04 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 4, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-11-23 21:36:04 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 5, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-11-23 21:36:04 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 172.28.203.196:45785 (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:36:14 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 4) in 9361 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:14 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 5) in 9765 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:14 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - ShuffleMapStage 2 (flatMapToPair at ShortestPath.java:76) finished in 9.837 s
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[7] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:36:14 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:36:14 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:14 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:14 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:14 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 3 (MapPartitionsRDD[7] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:14 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 2 tasks
+2019-11-23 21:36:14 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 6, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:14 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 7, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:14 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:14 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.28.203.196:58096
+2019-11-23 21:36:23 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 7) in 8677 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:23 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 6) in 8679 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:23 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - ResultStage 3 (count at ShortestPath.java:74) finished in 8.719 s
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Job 2 finished: count at ShortestPath.java:74, took 18.638739 s
+2019-11-23 21:36:23 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Registering RDD 8 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Got job 3 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (count at ShortestPath.java:74)
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 5)
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 5)
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (MapPartitionsRDD[8] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:36:23 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:36:23 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:23 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:23 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:23 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[8] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:23 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 2 tasks
+2019-11-23 21:36:23 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 8, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:36:23 INFO  TaskSetManager:54 - Starting task 1.0 in stage 5.0 (TID 9, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:36:23 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 8) in 18887 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:42 INFO  TaskSetManager:54 - Finished task 1.0 in stage 5.0 (TID 9) in 19339 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - ShuffleMapStage 5 (flatMapToPair at ShortestPath.java:76) finished in 19.367 s
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - waiting: Set(ResultStage 6)
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - Submitting ResultStage 6 (MapPartitionsRDD[11] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:36:42 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:36:42 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:42 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:42 INFO  SparkContext:54 - Created broadcast 6 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:42 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 6 (MapPartitionsRDD[11] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:42 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 2 tasks
+2019-11-23 21:36:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 10, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:42 INFO  TaskSetManager:54 - Starting task 1.0 in stage 6.0 (TID 11, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:42 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:43 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.28.203.196:58096
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 68
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 63
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 27
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 18
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 62
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 52
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 74
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 37
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 72
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 54
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 19
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 31
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 83
+2019-11-23 21:36:44 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on 172.28.203.196:45785 in memory (size: 2.3 KB, free: 366.3 MB)
+2019-11-23 21:36:44 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.3 KB, free: 366.3 MB)
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 61
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 2
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 69
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 88
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2019-11-23 21:36:44 INFO  ContextCleaner:54 - Cleaned accumulator 99
+2019-11-23 21:36:44 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 172.28.203.196:45785 in memory (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 84
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 98
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 172.28.203.196:45785 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 51
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 26
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 32
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 172.28.203.196:45785 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 71
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 79
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 0
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 20
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 172.28.203.196:45785 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 22
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 57
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 25
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 97
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 10
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 28
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 34
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 33
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 76
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 94
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 53
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 4
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 60
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 67
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 6
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 77
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 36
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 82
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 24
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 58
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 65
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 80
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 86
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 12
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 14
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 92
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 96
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 81
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 91
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 3
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 55
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 59
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 93
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 15
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 5
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 87
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 35
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 56
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 70
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 64
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 90
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 66
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 75
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 1
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 38
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 89
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 95
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 21
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 30
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 73
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 85
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 17
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 23
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 16
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 11
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 13
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 29
+2019-11-23 21:36:45 INFO  ContextCleaner:54 - Cleaned accumulator 78
+2019-11-23 21:36:47 INFO  TaskSetManager:54 - Finished task 1.0 in stage 6.0 (TID 11) in 4323 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 10) in 7389 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - ResultStage 6 (count at ShortestPath.java:74) finished in 7.420 s
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Job 3 finished: count at ShortestPath.java:74, took 26.795888 s
+2019-11-23 21:36:50 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Registering RDD 12 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Got job 4 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Final stage: ResultStage 10 (count at ShortestPath.java:74)
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 9)
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 9)
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 9 (MapPartitionsRDD[12] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:36:50 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:36:50 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:50 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:50 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:50 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[12] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:50 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 2 tasks
+2019-11-23 21:36:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 12, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:36:50 INFO  TaskSetManager:54 - Starting task 1.0 in stage 9.0 (TID 13, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:36:50 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:58 INFO  TaskSetManager:54 - Finished task 1.0 in stage 9.0 (TID 13) in 7874 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:36:59 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 12) in 9130 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:36:59 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - ShuffleMapStage 9 (flatMapToPair at ShortestPath.java:76) finished in 9.144 s
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - waiting: Set(ResultStage 10)
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - Submitting ResultStage 10 (MapPartitionsRDD[15] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:36:59 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:36:59 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:36:59 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:59 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:36:59 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 10 (MapPartitionsRDD[15] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:36:59 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 2 tasks
+2019-11-23 21:36:59 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 14, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:59 INFO  TaskSetManager:54 - Starting task 1.0 in stage 10.0 (TID 15, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:36:59 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:36:59 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 2 to 172.28.203.196:58096
+2019-11-23 21:37:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 10.0 (TID 15) in 1618 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:37:03 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 14) in 4396 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:37:03 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - ResultStage 10 (count at ShortestPath.java:74) finished in 4.402 s
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Job 4 finished: count at ShortestPath.java:74, took 13.553001 s
+2019-11-23 21:37:03 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Registering RDD 16 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Got job 5 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Final stage: ResultStage 15 (count at ShortestPath.java:74)
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 14)
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 14)
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 14 (MapPartitionsRDD[16] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:37:03 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:37:03 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:37:03 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:03 INFO  SparkContext:54 - Created broadcast 9 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:37:03 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 14 (MapPartitionsRDD[16] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:37:03 INFO  TaskSchedulerImpl:54 - Adding task set 14.0 with 2 tasks
+2019-11-23 21:37:03 INFO  TaskSetManager:54 - Starting task 0.0 in stage 14.0 (TID 16, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:37:03 INFO  TaskSetManager:54 - Starting task 1.0 in stage 14.0 (TID 17, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:37:03 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:12 INFO  TaskSetManager:54 - Finished task 1.0 in stage 14.0 (TID 17) in 8874 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:37:14 INFO  TaskSetManager:54 - Finished task 0.0 in stage 14.0 (TID 16) in 10222 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:37:14 INFO  TaskSchedulerImpl:54 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - ShuffleMapStage 14 (flatMapToPair at ShortestPath.java:76) finished in 10.229 s
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - waiting: Set(ResultStage 15)
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - Submitting ResultStage 15 (MapPartitionsRDD[19] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:37:14 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:37:14 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:37:14 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:14 INFO  SparkContext:54 - Created broadcast 10 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:37:14 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 15 (MapPartitionsRDD[19] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:37:14 INFO  TaskSchedulerImpl:54 - Adding task set 15.0 with 2 tasks
+2019-11-23 21:37:14 INFO  TaskSetManager:54 - Starting task 0.0 in stage 15.0 (TID 18, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:37:14 INFO  TaskSetManager:54 - Starting task 1.0 in stage 15.0 (TID 19, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:37:14 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:14 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 3 to 172.28.203.196:58096
+2019-11-23 21:37:16 INFO  TaskSetManager:54 - Finished task 1.0 in stage 15.0 (TID 19) in 2677 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:37:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 15.0 (TID 18) in 6543 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:37:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 15.0, whose tasks have all completed, from pool 
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - ResultStage 15 (count at ShortestPath.java:74) finished in 6.562 s
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Job 5 finished: count at ShortestPath.java:74, took 16.802350 s
+2019-11-23 21:37:20 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Registering RDD 20 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Got job 6 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Final stage: ResultStage 21 (count at ShortestPath.java:74)
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 20)
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 20)
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 20 (MapPartitionsRDD[20] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:37:20 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:37:20 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:37:20 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:20 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:37:20 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 20 (MapPartitionsRDD[20] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:37:20 INFO  TaskSchedulerImpl:54 - Adding task set 20.0 with 2 tasks
+2019-11-23 21:37:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 20.0 (TID 20, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:37:20 INFO  TaskSetManager:54 - Starting task 1.0 in stage 20.0 (TID 21, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:37:20 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:33 INFO  TaskSetManager:54 - Finished task 1.0 in stage 20.0 (TID 21) in 12593 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:37:35 INFO  TaskSetManager:54 - Finished task 0.0 in stage 20.0 (TID 20) in 15142 ms on 172.28.203.196 (executor 0) (2/2)
+2019-11-23 21:37:35 INFO  TaskSchedulerImpl:54 - Removed TaskSet 20.0, whose tasks have all completed, from pool 
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - ShuffleMapStage 20 (flatMapToPair at ShortestPath.java:76) finished in 15.152 s
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - waiting: Set(ResultStage 21)
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - Submitting ResultStage 21 (MapPartitionsRDD[23] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:37:35 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:37:35 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:37:35 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:35 INFO  SparkContext:54 - Created broadcast 12 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:37:35 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 21 (MapPartitionsRDD[23] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:37:35 INFO  TaskSchedulerImpl:54 - Adding task set 21.0 with 2 tasks
+2019-11-23 21:37:35 INFO  TaskSetManager:54 - Starting task 0.0 in stage 21.0 (TID 22, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:37:35 INFO  TaskSetManager:54 - Starting task 1.0 in stage 21.0 (TID 23, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:37:36 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 172.28.203.196:45785 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:36 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 4 to 172.28.203.196:58096
+2019-11-23 21:37:38 INFO  TaskSetManager:54 - Finished task 1.0 in stage 21.0 (TID 23) in 2799 ms on 172.28.203.196 (executor 0) (1/2)
+2019-11-23 21:37:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20191123213551-0002/0 is now EXITED (Command exited with code 137)
+2019-11-23 21:37:42 ERROR TaskSchedulerImpl:70 - Lost executor 0 on 172.28.203.196: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2019-11-23 21:37:42 WARN  TaskSetManager:66 - Lost task 0.0 in stage 21.0 (TID 22, 172.28.203.196, executor 0): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2019-11-23 21:37:42 INFO  StandaloneSchedulerBackend:54 - Executor app-20191123213551-0002/0 removed: Command exited with code 137
+2019-11-23 21:37:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20191123213551-0002/1 on worker-20191123212100-172.28.203.196-36809 (172.28.203.196:36809) with 3 core(s)
+2019-11-23 21:37:42 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20191123213551-0002/1 on hostPort 172.28.203.196:36809 with 3 core(s), 1024.0 MB RAM
+2019-11-23 21:37:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20191123213551-0002/1 is now RUNNING
+2019-11-23 21:37:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 0 from BlockManagerMaster.
+2019-11-23 21:37:42 INFO  BlockManagerMaster:54 - Removal of executor 0 requested
+2019-11-23 21:37:42 INFO  BlockManagerMasterEndpoint:54 - Removing block manager BlockManagerId(0, 172.28.203.196, 45785, None)
+2019-11-23 21:37:42 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 0
+2019-11-23 21:37:42 INFO  DAGScheduler:54 - Executor lost: 0 (epoch 5)
+2019-11-23 21:37:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 0 from BlockManagerMaster.
+2019-11-23 21:37:42 INFO  BlockManagerMaster:54 - Removed 0 successfully in removeExecutor
+2019-11-23 21:37:42 INFO  DAGScheduler:54 - Shuffle files lost for executor: 0 (epoch 5)
+2019-11-23 21:37:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.28.203.196:58380) with ID 1
+2019-11-23 21:37:52 INFO  TaskSetManager:54 - Starting task 0.1 in stage 21.0 (TID 24, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:37:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.28.203.196:40783 with 366.3 MB RAM, BlockManagerId(1, 172.28.203.196, 40783, None)
+2019-11-23 21:37:53 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:37:54 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 4 to 172.28.203.196:58380
+2019-11-23 21:37:54 WARN  TaskSetManager:66 - Lost task 0.1 in stage 21.0 (TID 24, 172.28.203.196, executor 1): FetchFailed(null, shuffleId=4, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 4
+	at org.apache.spark.MapOutputTracker$$anonfun$convertMapStatuses$2.apply(MapOutputTracker.scala:867)
+	at org.apache.spark.MapOutputTracker$$anonfun$convertMapStatuses$2.apply(MapOutputTracker.scala:863)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:863)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:677)
+	at org.apache.spark.shuffle.BlockStoreShuffleReader.read(BlockStoreShuffleReader.scala:49)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:105)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+)
+2019-11-23 21:37:54 INFO  TaskSetManager:54 - Task 0.1 in stage 21.0 (TID 24) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2019-11-23 21:37:54 INFO  TaskSchedulerImpl:54 - Removed TaskSet 21.0, whose tasks have all completed, from pool 
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - Marking ResultStage 21 (count at ShortestPath.java:74) as failed due to a fetch failure from ShuffleMapStage 20 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - ResultStage 21 (count at ShortestPath.java:74) failed in 18.417 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 4
+	at org.apache.spark.MapOutputTracker$$anonfun$convertMapStatuses$2.apply(MapOutputTracker.scala:867)
+	at org.apache.spark.MapOutputTracker$$anonfun$convertMapStatuses$2.apply(MapOutputTracker.scala:863)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:863)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:677)
+	at org.apache.spark.shuffle.BlockStoreShuffleReader.read(BlockStoreShuffleReader.scala:49)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:105)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - Resubmitting ShuffleMapStage 20 (flatMapToPair at ShortestPath.java:76) and ResultStage 21 (count at ShortestPath.java:74) due to fetch failure
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - Resubmitting failed stages
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 16 (MapPartitionsRDD[4] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:37:54 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 5.6 KB, free 366.0 MB)
+2019-11-23 21:37:54 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 3.1 KB, free 366.0 MB)
+2019-11-23 21:37:54 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:37:54 INFO  SparkContext:54 - Created broadcast 13 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:37:54 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 16 (MapPartitionsRDD[4] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:37:54 INFO  TaskSchedulerImpl:54 - Adding task set 16.0 with 2 tasks
+2019-11-23 21:37:54 INFO  TaskSetManager:54 - Starting task 0.0 in stage 16.0 (TID 25, 172.28.203.196, executor 1, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-11-23 21:37:54 INFO  TaskSetManager:54 - Starting task 1.0 in stage 16.0 (TID 26, 172.28.203.196, executor 1, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-11-23 21:37:54 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on 172.28.203.196:40783 (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:37:55 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.28.203.196:40783 (size: 22.9 KB, free: 366.3 MB)
+2019-11-23 21:38:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 16.0 (TID 25) in 8201 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:38:04 INFO  TaskSetManager:54 - Finished task 1.0 in stage 16.0 (TID 26) in 10219 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:38:04 INFO  TaskSchedulerImpl:54 - Removed TaskSet 16.0, whose tasks have all completed, from pool 
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - ShuffleMapStage 16 (flatMapToPair at ShortestPath.java:76) finished in 10.264 s
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 17, ResultStage 21, ShuffleMapStage 18)
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 17 (MapPartitionsRDD[8] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:38:04 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:38:04 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:38:04 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:04 INFO  SparkContext:54 - Created broadcast 14 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:38:04 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 17 (MapPartitionsRDD[8] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:38:04 INFO  TaskSchedulerImpl:54 - Adding task set 17.0 with 2 tasks
+2019-11-23 21:38:04 INFO  TaskSetManager:54 - Starting task 0.0 in stage 17.0 (TID 27, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:04 INFO  TaskSetManager:54 - Starting task 1.0 in stage 17.0 (TID 28, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:04 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:04 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.28.203.196:58380
+2019-11-23 21:38:19 INFO  TaskSetManager:54 - Finished task 1.0 in stage 17.0 (TID 28) in 14553 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:38:19 INFO  TaskSetManager:54 - Finished task 0.0 in stage 17.0 (TID 27) in 15014 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:38:19 INFO  TaskSchedulerImpl:54 - Removed TaskSet 17.0, whose tasks have all completed, from pool 
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - ShuffleMapStage 17 (flatMapToPair at ShortestPath.java:76) finished in 15.022 s
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 19, ShuffleMapStage 20, ResultStage 21, ShuffleMapStage 18)
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 18 (MapPartitionsRDD[12] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:38:19 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:38:19 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:38:19 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:19 INFO  SparkContext:54 - Created broadcast 15 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:38:19 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 18 (MapPartitionsRDD[12] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:38:19 INFO  TaskSchedulerImpl:54 - Adding task set 18.0 with 2 tasks
+2019-11-23 21:38:19 INFO  TaskSetManager:54 - Starting task 0.0 in stage 18.0 (TID 29, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:19 INFO  TaskSetManager:54 - Starting task 1.0 in stage 18.0 (TID 30, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:19 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.28.203.196:58380
+2019-11-23 21:38:29 INFO  TaskSetManager:54 - Finished task 1.0 in stage 18.0 (TID 30) in 9288 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:38:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 18.0 (TID 29) in 10473 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:38:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 18.0, whose tasks have all completed, from pool 
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - ShuffleMapStage 18 (flatMapToPair at ShortestPath.java:76) finished in 10.491 s
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 19, ShuffleMapStage 20, ResultStage 21)
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 19 (MapPartitionsRDD[16] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:38:30 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:38:30 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:38:30 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:30 INFO  SparkContext:54 - Created broadcast 16 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:38:30 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 19 (MapPartitionsRDD[16] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:38:30 INFO  TaskSchedulerImpl:54 - Adding task set 19.0 with 2 tasks
+2019-11-23 21:38:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 19.0 (TID 31, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:30 INFO  TaskSetManager:54 - Starting task 1.0 in stage 19.0 (TID 32, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:30 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:30 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 2 to 172.28.203.196:58380
+2019-11-23 21:38:41 INFO  TaskSetManager:54 - Finished task 1.0 in stage 19.0 (TID 32) in 11399 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:38:43 INFO  TaskSetManager:54 - Finished task 0.0 in stage 19.0 (TID 31) in 13530 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:38:43 INFO  TaskSchedulerImpl:54 - Removed TaskSet 19.0, whose tasks have all completed, from pool 
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - ShuffleMapStage 19 (flatMapToPair at ShortestPath.java:76) finished in 13.547 s
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 20, ResultStage 21)
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 20 (MapPartitionsRDD[20] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:38:43 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:38:43 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:38:43 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:38:43 INFO  SparkContext:54 - Created broadcast 17 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:38:43 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 20 (MapPartitionsRDD[20] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:38:43 INFO  TaskSchedulerImpl:54 - Adding task set 20.1 with 2 tasks
+2019-11-23 21:38:43 INFO  TaskSetManager:54 - Starting task 0.0 in stage 20.1 (TID 33, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:43 INFO  TaskSetManager:54 - Starting task 1.0 in stage 20.1 (TID 34, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:38:43 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:43 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 3 to 172.28.203.196:58380
+2019-11-23 21:38:54 INFO  TaskSetManager:54 - Finished task 1.0 in stage 20.1 (TID 34) in 10801 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:38:57 INFO  TaskSetManager:54 - Finished task 0.0 in stage 20.1 (TID 33) in 13755 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:38:57 INFO  TaskSchedulerImpl:54 - Removed TaskSet 20.1, whose tasks have all completed, from pool 
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - ShuffleMapStage 20 (flatMapToPair at ShortestPath.java:76) finished in 13.775 s
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - waiting: Set(ResultStage 21)
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - Submitting ResultStage 21 (MapPartitionsRDD[23] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:38:57 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:38:57 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:38:57 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:38:57 INFO  SparkContext:54 - Created broadcast 18 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:38:57 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 21 (MapPartitionsRDD[23] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0))
+2019-11-23 21:38:57 INFO  TaskSchedulerImpl:54 - Adding task set 21.1 with 1 tasks
+2019-11-23 21:38:57 INFO  TaskSetManager:54 - Starting task 0.0 in stage 21.1 (TID 35, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:38:57 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:38:57 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 4 to 172.28.203.196:58380
+2019-11-23 21:39:04 INFO  TaskSetManager:54 - Finished task 0.0 in stage 21.1 (TID 35) in 6971 ms on 172.28.203.196 (executor 1) (1/1)
+2019-11-23 21:39:04 INFO  TaskSchedulerImpl:54 - Removed TaskSet 21.1, whose tasks have all completed, from pool 
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - ResultStage 21 (count at ShortestPath.java:74) finished in 7.047 s
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Job 6 finished: count at ShortestPath.java:74, took 103.947827 s
+2019-11-23 21:39:04 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Registering RDD 24 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Got job 7 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Final stage: ResultStage 28 (count at ShortestPath.java:74)
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 27)
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 27)
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 27 (MapPartitionsRDD[24] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:39:04 INFO  MemoryStore:54 - Block broadcast_19 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:39:04 INFO  MemoryStore:54 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:04 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:04 INFO  SparkContext:54 - Created broadcast 19 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:04 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 27 (MapPartitionsRDD[24] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:04 INFO  TaskSchedulerImpl:54 - Adding task set 27.0 with 2 tasks
+2019-11-23 21:39:04 INFO  TaskSetManager:54 - Starting task 0.0 in stage 27.0 (TID 36, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:04 INFO  TaskSetManager:54 - Starting task 1.0 in stage 27.0 (TID 37, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:04 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:39:20 INFO  TaskSetManager:54 - Finished task 1.0 in stage 27.0 (TID 37) in 15581 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:28 INFO  TaskSetManager:54 - Finished task 0.0 in stage 27.0 (TID 36) in 23939 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 27.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - ShuffleMapStage 27 (flatMapToPair at ShortestPath.java:76) finished in 23.961 s
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - waiting: Set(ResultStage 28)
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - Submitting ResultStage 28 (MapPartitionsRDD[27] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:39:28 INFO  MemoryStore:54 - Block broadcast_20 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:39:28 INFO  MemoryStore:54 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:28 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:28 INFO  SparkContext:54 - Created broadcast 20 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:28 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 28 (MapPartitionsRDD[27] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:28 INFO  TaskSchedulerImpl:54 - Adding task set 28.0 with 2 tasks
+2019-11-23 21:39:28 INFO  TaskSetManager:54 - Starting task 0.0 in stage 28.0 (TID 38, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:28 INFO  TaskSetManager:54 - Starting task 1.0 in stage 28.0 (TID 39, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:28 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:39:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 5 to 172.28.203.196:58380
+2019-11-23 21:39:31 INFO  TaskSetManager:54 - Finished task 1.0 in stage 28.0 (TID 39) in 2909 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:37 INFO  TaskSetManager:54 - Finished task 0.0 in stage 28.0 (TID 38) in 9150 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:37 INFO  TaskSchedulerImpl:54 - Removed TaskSet 28.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:37 INFO  DAGScheduler:54 - ResultStage 28 (count at ShortestPath.java:74) finished in 9.180 s
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Job 7 finished: count at ShortestPath.java:74, took 33.151900 s
+2019-11-23 21:39:38 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Registering RDD 28 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Got job 8 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Final stage: ResultStage 36 (count at ShortestPath.java:74)
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 35)
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 35)
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 35 (MapPartitionsRDD[28] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:39:38 INFO  MemoryStore:54 - Block broadcast_21 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:39:38 INFO  MemoryStore:54 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:38 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:38 INFO  SparkContext:54 - Created broadcast 21 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:38 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 35 (MapPartitionsRDD[28] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:38 INFO  TaskSchedulerImpl:54 - Adding task set 35.0 with 2 tasks
+2019-11-23 21:39:38 INFO  TaskSetManager:54 - Starting task 0.0 in stage 35.0 (TID 40, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:38 INFO  TaskSetManager:54 - Starting task 1.0 in stage 35.0 (TID 41, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:38 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:39:44 INFO  TaskSetManager:54 - Finished task 1.0 in stage 35.0 (TID 41) in 6328 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:45 INFO  TaskSetManager:54 - Finished task 0.0 in stage 35.0 (TID 40) in 7272 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:45 INFO  TaskSchedulerImpl:54 - Removed TaskSet 35.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - ShuffleMapStage 35 (flatMapToPair at ShortestPath.java:76) finished in 7.315 s
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - waiting: Set(ResultStage 36)
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - Submitting ResultStage 36 (MapPartitionsRDD[31] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:39:45 INFO  MemoryStore:54 - Block broadcast_22 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:39:45 INFO  MemoryStore:54 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:45 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:45 INFO  SparkContext:54 - Created broadcast 22 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:45 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 36 (MapPartitionsRDD[31] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:45 INFO  TaskSchedulerImpl:54 - Adding task set 36.0 with 2 tasks
+2019-11-23 21:39:45 INFO  TaskSetManager:54 - Starting task 0.0 in stage 36.0 (TID 42, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:45 INFO  TaskSetManager:54 - Starting task 1.0 in stage 36.0 (TID 43, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:45 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:39:45 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 6 to 172.28.203.196:58380
+2019-11-23 21:39:47 INFO  TaskSetManager:54 - Finished task 1.0 in stage 36.0 (TID 43) in 1756 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 36.0 (TID 42) in 3943 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 36.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - ResultStage 36 (count at ShortestPath.java:74) finished in 3.973 s
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Job 8 finished: count at ShortestPath.java:74, took 11.300027 s
+2019-11-23 21:39:49 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Registering RDD 32 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Got job 9 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Final stage: ResultStage 45 (count at ShortestPath.java:74)
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 44)
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 44)
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 44 (MapPartitionsRDD[32] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:39:49 INFO  MemoryStore:54 - Block broadcast_23 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:39:49 INFO  MemoryStore:54 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:49 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:49 INFO  SparkContext:54 - Created broadcast 23 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:49 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 44 (MapPartitionsRDD[32] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:49 INFO  TaskSchedulerImpl:54 - Adding task set 44.0 with 2 tasks
+2019-11-23 21:39:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 44.0 (TID 44, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:49 INFO  TaskSetManager:54 - Starting task 1.0 in stage 44.0 (TID 45, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:49 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:55 INFO  TaskSetManager:54 - Finished task 1.0 in stage 44.0 (TID 45) in 6226 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:56 INFO  TaskSetManager:54 - Finished task 0.0 in stage 44.0 (TID 44) in 7263 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:56 INFO  TaskSchedulerImpl:54 - Removed TaskSet 44.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - ShuffleMapStage 44 (flatMapToPair at ShortestPath.java:76) finished in 7.284 s
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - waiting: Set(ResultStage 45)
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - Submitting ResultStage 45 (MapPartitionsRDD[35] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:39:56 INFO  MemoryStore:54 - Block broadcast_24 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:39:56 INFO  MemoryStore:54 - Block broadcast_24_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:56 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:56 INFO  SparkContext:54 - Created broadcast 24 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:56 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 45 (MapPartitionsRDD[35] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:56 INFO  TaskSchedulerImpl:54 - Adding task set 45.0 with 2 tasks
+2019-11-23 21:39:56 INFO  TaskSetManager:54 - Starting task 0.0 in stage 45.0 (TID 46, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:56 INFO  TaskSetManager:54 - Starting task 1.0 in stage 45.0 (TID 47, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:39:56 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:56 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 7 to 172.28.203.196:58380
+2019-11-23 21:39:57 INFO  TaskSetManager:54 - Finished task 1.0 in stage 45.0 (TID 47) in 1152 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:39:59 INFO  TaskSetManager:54 - Finished task 0.0 in stage 45.0 (TID 46) in 3254 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:39:59 INFO  TaskSchedulerImpl:54 - Removed TaskSet 45.0, whose tasks have all completed, from pool 
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - ResultStage 45 (count at ShortestPath.java:74) finished in 3.260 s
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Job 9 finished: count at ShortestPath.java:74, took 10.554096 s
+2019-11-23 21:39:59 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Registering RDD 36 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Got job 10 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Final stage: ResultStage 55 (count at ShortestPath.java:74)
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 54)
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 54)
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 54 (MapPartitionsRDD[36] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:39:59 INFO  MemoryStore:54 - Block broadcast_25 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:39:59 INFO  MemoryStore:54 - Block broadcast_25_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:39:59 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:39:59 INFO  SparkContext:54 - Created broadcast 25 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:39:59 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 54 (MapPartitionsRDD[36] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:39:59 INFO  TaskSchedulerImpl:54 - Adding task set 54.0 with 2 tasks
+2019-11-23 21:39:59 INFO  TaskSetManager:54 - Starting task 0.0 in stage 54.0 (TID 48, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:59 INFO  TaskSetManager:54 - Starting task 1.0 in stage 54.0 (TID 49, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:39:59 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:05 INFO  TaskSetManager:54 - Finished task 1.0 in stage 54.0 (TID 49) in 5281 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 54.0 (TID 48) in 6719 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:06 INFO  TaskSchedulerImpl:54 - Removed TaskSet 54.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - ShuffleMapStage 54 (flatMapToPair at ShortestPath.java:76) finished in 6.724 s
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - waiting: Set(ResultStage 55)
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - Submitting ResultStage 55 (MapPartitionsRDD[39] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:06 INFO  MemoryStore:54 - Block broadcast_26 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:40:06 INFO  MemoryStore:54 - Block broadcast_26_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:40:06 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:06 INFO  SparkContext:54 - Created broadcast 26 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:06 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 55 (MapPartitionsRDD[39] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:06 INFO  TaskSchedulerImpl:54 - Adding task set 55.0 with 2 tasks
+2019-11-23 21:40:06 INFO  TaskSetManager:54 - Starting task 0.0 in stage 55.0 (TID 50, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:06 INFO  TaskSetManager:54 - Starting task 1.0 in stage 55.0 (TID 51, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:06 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:06 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 8 to 172.28.203.196:58380
+2019-11-23 21:40:07 INFO  TaskSetManager:54 - Finished task 1.0 in stage 55.0 (TID 51) in 1166 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 55.0 (TID 50) in 4014 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:10 INFO  TaskSchedulerImpl:54 - Removed TaskSet 55.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - ResultStage 55 (count at ShortestPath.java:74) finished in 4.021 s
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Job 10 finished: count at ShortestPath.java:74, took 10.751581 s
+2019-11-23 21:40:10 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Registering RDD 40 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Got job 11 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Final stage: ResultStage 66 (count at ShortestPath.java:74)
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 65)
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 65)
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 65 (MapPartitionsRDD[40] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:40:10 INFO  MemoryStore:54 - Block broadcast_27 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:40:10 INFO  MemoryStore:54 - Block broadcast_27_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:40:10 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:10 INFO  SparkContext:54 - Created broadcast 27 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:10 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 65 (MapPartitionsRDD[40] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:10 INFO  TaskSchedulerImpl:54 - Adding task set 65.0 with 2 tasks
+2019-11-23 21:40:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 65.0 (TID 52, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:10 INFO  TaskSetManager:54 - Starting task 1.0 in stage 65.0 (TID 53, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:10 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:15 INFO  TaskSetManager:54 - Finished task 1.0 in stage 65.0 (TID 53) in 4665 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 65.0 (TID 52) in 5802 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 65.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - ShuffleMapStage 65 (flatMapToPair at ShortestPath.java:76) finished in 5.809 s
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - waiting: Set(ResultStage 66)
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - Submitting ResultStage 66 (MapPartitionsRDD[43] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:16 INFO  MemoryStore:54 - Block broadcast_28 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:40:16 INFO  MemoryStore:54 - Block broadcast_28_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  SparkContext:54 - Created broadcast 28 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:16 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 66 (MapPartitionsRDD[43] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:16 INFO  TaskSchedulerImpl:54 - Adding task set 66.0 with 2 tasks
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 212
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 220
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 581
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 235
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 365
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 637
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 585
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 155
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 238
+2019-11-23 21:40:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 66.0 (TID 54, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:16 INFO  TaskSetManager:54 - Starting task 1.0 in stage 66.0 (TID 55, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 9 to 172.28.203.196:58380
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 366
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 120
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 400
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 307
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 345
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 649
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 576
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 310
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 371
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 500
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 403
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 278
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 298
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 502
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 635
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 358
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 241
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 561
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 109
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 271
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 546
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 125
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 374
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 610
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 178
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 245
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 158
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 312
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 450
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 105
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 218
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 343
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 420
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 620
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 471
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 344
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 294
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 335
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 149
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 171
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 456
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 593
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 296
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_26_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_26_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 354
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 285
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 362
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 458
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 621
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 106
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 638
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 431
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 295
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 283
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 363
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 181
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 465
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 300
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 256
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 351
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 355
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 320
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 528
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 602
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 263
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 357
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 377
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 422
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 591
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 399
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 418
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 441
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 511
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 425
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 147
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 527
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 510
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 107
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 309
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 396
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 454
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 631
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 536
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 495
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 244
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 550
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 326
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 202
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 427
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 237
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 484
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 499
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 332
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 352
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 228
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 336
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 509
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 544
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 481
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 520
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 464
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 257
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 461
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 116
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 243
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 143
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 287
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 346
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 274
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 521
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 384
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 587
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 301
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 439
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 497
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 166
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 121
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 421
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 213
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 598
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 372
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 179
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 224
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 562
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 319
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 338
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 451
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 483
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 571
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 542
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 486
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 582
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 347
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 276
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 219
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 394
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 231
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 538
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 539
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 572
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 552
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 370
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 436
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 556
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 515
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 138
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 423
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 168
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 645
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 265
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 640
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 360
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 268
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 117
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 254
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 284
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 306
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 446
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 508
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 629
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 535
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 333
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 111
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 501
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 302
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 156
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 391
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 467
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 532
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 173
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 321
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 409
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 127
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 624
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 227
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 328
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 472
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 104
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 553
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 258
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 249
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 262
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 594
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 477
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 565
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 209
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 215
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 115
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 246
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 308
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 438
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 350
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 606
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 505
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 557
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 397
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 641
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 226
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 517
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 267
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 496
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 408
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 177
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 448
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 504
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 579
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 167
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 476
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 449
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 564
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 485
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 314
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 623
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 523
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 555
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 647
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 519
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 324
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 540
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 586
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 482
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 566
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 443
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 614
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 636
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 513
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 247
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 429
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 182
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 596
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 269
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 159
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 289
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 339
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 112
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 405
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 329
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 551
+2019-11-23 21:40:16 INFO  ContextCleaner:54 - Cleaned accumulator 414
+2019-11-23 21:40:16 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 595
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 146
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 390
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 625
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 211
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 359
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 412
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 234
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 433
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 516
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 531
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 474
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 524
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 426
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 157
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 286
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 327
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 616
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 154
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 417
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 534
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 628
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 630
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 103
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 430
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 583
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 398
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 102
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 646
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 455
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 369
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 473
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 134
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 172
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 440
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 401
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 622
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 468
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 416
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 201
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 541
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 221
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 459
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 463
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 207
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 214
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 100
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 493
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 225
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 375
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 410
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 529
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 198
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 367
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 612
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 558
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 251
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 554
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 183
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 444
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 272
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 395
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 130
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 353
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 494
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 577
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 480
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 364
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 392
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 512
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 580
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 242
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 250
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 393
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 452
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 222
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 205
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 627
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 325
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 479
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 223
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 453
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 617
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 356
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 457
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 187
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 315
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 413
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 445
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 153
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 113
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 492
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 373
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 185
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 644
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 316
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 633
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 110
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 174
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 381
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 613
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 248
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 348
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 281
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 305
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 487
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 489
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 210
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 383
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_25_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_25_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 163
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 514
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 387
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 567
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 605
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 386
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 618
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 643
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 193
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 129
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 317
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 349
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 340
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 600
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 498
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 259
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 388
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 293
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 341
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 342
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 404
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 518
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 176
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 291
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 334
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 490
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 522
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 549
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 189
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 192
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 331
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 434
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 597
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 607
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 503
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 150
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 124
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 608
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 161
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 573
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 188
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 144
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 175
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 428
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 506
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_24_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_24_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 648
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 230
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 200
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 206
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 260
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 507
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 548
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 126
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 491
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 545
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 275
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 530
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 460
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 108
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 415
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 407
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 313
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 133
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 447
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 442
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 619
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 543
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 151
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 323
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 589
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 402
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 437
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 470
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 184
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 419
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 152
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 252
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 537
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 590
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 208
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 322
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 533
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 592
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 277
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 195
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 466
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 229
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 609
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 233
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 164
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 190
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 563
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 165
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 217
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 292
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 603
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 290
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 488
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 232
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 385
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 266
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 574
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 634
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 273
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 140
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 382
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 601
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 122
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 560
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 191
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 626
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 255
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 180
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 196
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 584
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 145
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 101
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 578
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 186
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 303
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 318
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 588
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 559
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 642
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 389
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 279
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 462
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 297
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 570
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 378
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 368
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 253
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 216
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 236
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 204
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 203
+2019-11-23 21:40:17 INFO  ContextCleaner:54 - Cleaned accumulator 604
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 411
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 261
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 526
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 424
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 379
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 299
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 361
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 380
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 615
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 162
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 118
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 280
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 599
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 632
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 282
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 194
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 136
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 270
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 288
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 568
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 197
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 376
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 475
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 569
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on 172.28.203.196:40783 in memory (size: 3.1 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 469
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 239
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 169
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 639
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 330
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 611
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 525
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 240
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 337
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 435
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 406
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 432
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 547
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 304
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 199
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on 172.28.203.196:40783 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on cssmpi1.uwb.edu:34839 in memory (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 575
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 311
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 264
+2019-11-23 21:40:18 INFO  ContextCleaner:54 - Cleaned accumulator 478
+2019-11-23 21:40:18 INFO  TaskSetManager:54 - Finished task 1.0 in stage 66.0 (TID 55) in 1975 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:21 INFO  TaskSetManager:54 - Finished task 0.0 in stage 66.0 (TID 54) in 4625 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - ResultStage 66 (count at ShortestPath.java:74) finished in 4.657 s
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Job 11 finished: count at ShortestPath.java:74, took 10.472200 s
+2019-11-23 21:40:21 INFO  TaskSchedulerImpl:54 - Removed TaskSet 66.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:21 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Registering RDD 44 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Got job 12 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Final stage: ResultStage 78 (count at ShortestPath.java:74)
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 77)
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 77)
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 77 (MapPartitionsRDD[44] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:40:21 INFO  MemoryStore:54 - Block broadcast_29 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:40:21 INFO  MemoryStore:54 - Block broadcast_29_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:21 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:21 INFO  SparkContext:54 - Created broadcast 29 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:21 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 77 (MapPartitionsRDD[44] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:21 INFO  TaskSchedulerImpl:54 - Adding task set 77.0 with 2 tasks
+2019-11-23 21:40:21 INFO  TaskSetManager:54 - Starting task 0.0 in stage 77.0 (TID 56, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:21 INFO  TaskSetManager:54 - Starting task 1.0 in stage 77.0 (TID 57, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:21 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:27 INFO  TaskSetManager:54 - Finished task 1.0 in stage 77.0 (TID 57) in 6138 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:27 INFO  TaskSetManager:54 - Finished task 0.0 in stage 77.0 (TID 56) in 6478 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:27 INFO  TaskSchedulerImpl:54 - Removed TaskSet 77.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - ShuffleMapStage 77 (flatMapToPair at ShortestPath.java:76) finished in 6.487 s
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - waiting: Set(ResultStage 78)
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - Submitting ResultStage 78 (MapPartitionsRDD[47] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:27 INFO  MemoryStore:54 - Block broadcast_30 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:40:27 INFO  MemoryStore:54 - Block broadcast_30_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:27 INFO  BlockManagerInfo:54 - Added broadcast_30_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:27 INFO  SparkContext:54 - Created broadcast 30 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:27 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 78 (MapPartitionsRDD[47] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:27 INFO  TaskSchedulerImpl:54 - Adding task set 78.0 with 2 tasks
+2019-11-23 21:40:27 INFO  TaskSetManager:54 - Starting task 0.0 in stage 78.0 (TID 58, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:27 INFO  TaskSetManager:54 - Starting task 1.0 in stage 78.0 (TID 59, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:27 INFO  BlockManagerInfo:54 - Added broadcast_30_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:27 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 10 to 172.28.203.196:58380
+2019-11-23 21:40:28 INFO  TaskSetManager:54 - Finished task 1.0 in stage 78.0 (TID 59) in 1093 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 78.0 (TID 58) in 3008 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 78.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - ResultStage 78 (count at ShortestPath.java:74) finished in 3.014 s
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Job 12 finished: count at ShortestPath.java:74, took 9.505968 s
+2019-11-23 21:40:30 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Registering RDD 48 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Got job 13 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Final stage: ResultStage 91 (count at ShortestPath.java:74)
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 90)
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 90)
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 90 (MapPartitionsRDD[48] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:40:30 INFO  MemoryStore:54 - Block broadcast_31 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:40:30 INFO  MemoryStore:54 - Block broadcast_31_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:30 INFO  BlockManagerInfo:54 - Added broadcast_31_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:30 INFO  SparkContext:54 - Created broadcast 31 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:30 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 90 (MapPartitionsRDD[48] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:30 INFO  TaskSchedulerImpl:54 - Adding task set 90.0 with 2 tasks
+2019-11-23 21:40:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 90.0 (TID 60, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:30 INFO  TaskSetManager:54 - Starting task 1.0 in stage 90.0 (TID 61, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:30 INFO  BlockManagerInfo:54 - Added broadcast_31_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:36 INFO  TaskSetManager:54 - Finished task 1.0 in stage 90.0 (TID 61) in 5435 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:37 INFO  TaskSetManager:54 - Finished task 0.0 in stage 90.0 (TID 60) in 6505 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:37 INFO  TaskSchedulerImpl:54 - Removed TaskSet 90.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - ShuffleMapStage 90 (flatMapToPair at ShortestPath.java:76) finished in 6.514 s
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - waiting: Set(ResultStage 91)
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - Submitting ResultStage 91 (MapPartitionsRDD[51] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:37 INFO  MemoryStore:54 - Block broadcast_32 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:40:37 INFO  MemoryStore:54 - Block broadcast_32_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:37 INFO  BlockManagerInfo:54 - Added broadcast_32_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:37 INFO  SparkContext:54 - Created broadcast 32 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:37 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 91 (MapPartitionsRDD[51] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 91.0 with 2 tasks
+2019-11-23 21:40:37 INFO  TaskSetManager:54 - Starting task 0.0 in stage 91.0 (TID 62, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:37 INFO  TaskSetManager:54 - Starting task 1.0 in stage 91.0 (TID 63, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:37 INFO  BlockManagerInfo:54 - Added broadcast_32_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:37 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 11 to 172.28.203.196:58380
+2019-11-23 21:40:38 INFO  TaskSetManager:54 - Finished task 1.0 in stage 91.0 (TID 63) in 1168 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 91.0 (TID 62) in 3617 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 91.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - ResultStage 91 (count at ShortestPath.java:74) finished in 3.624 s
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Job 13 finished: count at ShortestPath.java:74, took 10.144714 s
+2019-11-23 21:40:40 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Registering RDD 52 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Got job 14 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Final stage: ResultStage 105 (count at ShortestPath.java:74)
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 104)
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 104)
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 104 (MapPartitionsRDD[52] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:40:40 INFO  MemoryStore:54 - Block broadcast_33 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:40:40 INFO  MemoryStore:54 - Block broadcast_33_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:40 INFO  BlockManagerInfo:54 - Added broadcast_33_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:40 INFO  SparkContext:54 - Created broadcast 33 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:40 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 104 (MapPartitionsRDD[52] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:40 INFO  TaskSchedulerImpl:54 - Adding task set 104.0 with 2 tasks
+2019-11-23 21:40:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 104.0 (TID 64, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:40 INFO  TaskSetManager:54 - Starting task 1.0 in stage 104.0 (TID 65, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:40 INFO  BlockManagerInfo:54 - Added broadcast_33_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:45 INFO  TaskSetManager:54 - Finished task 1.0 in stage 104.0 (TID 65) in 4904 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 104.0 (TID 64) in 5524 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 104.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 104 (flatMapToPair at ShortestPath.java:76) finished in 5.533 s
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - waiting: Set(ResultStage 105)
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - Submitting ResultStage 105 (MapPartitionsRDD[55] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:46 INFO  MemoryStore:54 - Block broadcast_34 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:40:46 INFO  MemoryStore:54 - Block broadcast_34_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:46 INFO  BlockManagerInfo:54 - Added broadcast_34_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:46 INFO  SparkContext:54 - Created broadcast 34 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:46 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 105 (MapPartitionsRDD[55] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:46 INFO  TaskSchedulerImpl:54 - Adding task set 105.0 with 2 tasks
+2019-11-23 21:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 105.0 (TID 66, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:46 INFO  TaskSetManager:54 - Starting task 1.0 in stage 105.0 (TID 67, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:46 INFO  BlockManagerInfo:54 - Added broadcast_34_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:46 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 12 to 172.28.203.196:58380
+2019-11-23 21:40:47 INFO  TaskSetManager:54 - Finished task 1.0 in stage 105.0 (TID 67) in 1473 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 105.0 (TID 66) in 3659 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 105.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - ResultStage 105 (count at ShortestPath.java:74) finished in 3.664 s
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Job 14 finished: count at ShortestPath.java:74, took 9.203911 s
+2019-11-23 21:40:50 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Registering RDD 56 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Got job 15 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Final stage: ResultStage 120 (count at ShortestPath.java:74)
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 119)
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 119)
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 119 (MapPartitionsRDD[56] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:40:50 INFO  MemoryStore:54 - Block broadcast_35 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:40:50 INFO  MemoryStore:54 - Block broadcast_35_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:50 INFO  BlockManagerInfo:54 - Added broadcast_35_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:50 INFO  SparkContext:54 - Created broadcast 35 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:50 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 119 (MapPartitionsRDD[56] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:50 INFO  TaskSchedulerImpl:54 - Adding task set 119.0 with 2 tasks
+2019-11-23 21:40:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 119.0 (TID 68, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:50 INFO  TaskSetManager:54 - Starting task 1.0 in stage 119.0 (TID 69, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:40:50 INFO  BlockManagerInfo:54 - Added broadcast_35_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:56 INFO  TaskSetManager:54 - Finished task 1.0 in stage 119.0 (TID 69) in 6437 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:40:56 INFO  TaskSetManager:54 - Finished task 0.0 in stage 119.0 (TID 68) in 6736 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:40:56 INFO  TaskSchedulerImpl:54 - Removed TaskSet 119.0, whose tasks have all completed, from pool 
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - ShuffleMapStage 119 (flatMapToPair at ShortestPath.java:76) finished in 6.754 s
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - waiting: Set(ResultStage 120)
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - Submitting ResultStage 120 (MapPartitionsRDD[59] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:40:56 INFO  MemoryStore:54 - Block broadcast_36 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:40:56 INFO  MemoryStore:54 - Block broadcast_36_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:40:56 INFO  BlockManagerInfo:54 - Added broadcast_36_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:56 INFO  SparkContext:54 - Created broadcast 36 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:40:56 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 120 (MapPartitionsRDD[59] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:40:56 INFO  TaskSchedulerImpl:54 - Adding task set 120.0 with 2 tasks
+2019-11-23 21:40:56 INFO  TaskSetManager:54 - Starting task 0.0 in stage 120.0 (TID 70, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:56 INFO  TaskSetManager:54 - Starting task 1.0 in stage 120.0 (TID 71, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:40:56 INFO  BlockManagerInfo:54 - Added broadcast_36_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:40:56 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 13 to 172.28.203.196:58380
+2019-11-23 21:40:58 INFO  TaskSetManager:54 - Finished task 1.0 in stage 120.0 (TID 71) in 1221 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:00 INFO  TaskSetManager:54 - Finished task 0.0 in stage 120.0 (TID 70) in 3430 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:00 INFO  TaskSchedulerImpl:54 - Removed TaskSet 120.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - ResultStage 120 (count at ShortestPath.java:74) finished in 3.436 s
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Job 15 finished: count at ShortestPath.java:74, took 10.196923 s
+2019-11-23 21:41:00 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Registering RDD 60 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Got job 16 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Final stage: ResultStage 136 (count at ShortestPath.java:74)
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 135)
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 135)
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 135 (MapPartitionsRDD[60] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:00 INFO  MemoryStore:54 - Block broadcast_37 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:41:00 INFO  MemoryStore:54 - Block broadcast_37_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:41:00 INFO  BlockManagerInfo:54 - Added broadcast_37_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:41:00 INFO  SparkContext:54 - Created broadcast 37 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:00 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 135 (MapPartitionsRDD[60] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:00 INFO  TaskSchedulerImpl:54 - Adding task set 135.0 with 2 tasks
+2019-11-23 21:41:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 135.0 (TID 72, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 135.0 (TID 73, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:00 INFO  BlockManagerInfo:54 - Added broadcast_37_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.3 MB)
+2019-11-23 21:41:06 INFO  TaskSetManager:54 - Finished task 1.0 in stage 135.0 (TID 73) in 5712 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 135.0 (TID 72) in 6626 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:06 INFO  TaskSchedulerImpl:54 - Removed TaskSet 135.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - ShuffleMapStage 135 (flatMapToPair at ShortestPath.java:76) finished in 6.641 s
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - waiting: Set(ResultStage 136)
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - Submitting ResultStage 136 (MapPartitionsRDD[63] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:06 INFO  MemoryStore:54 - Block broadcast_38 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:41:06 INFO  MemoryStore:54 - Block broadcast_38_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:41:06 INFO  BlockManagerInfo:54 - Added broadcast_38_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:06 INFO  SparkContext:54 - Created broadcast 38 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:06 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 136 (MapPartitionsRDD[63] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:06 INFO  TaskSchedulerImpl:54 - Adding task set 136.0 with 2 tasks
+2019-11-23 21:41:06 INFO  TaskSetManager:54 - Starting task 0.0 in stage 136.0 (TID 74, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:06 INFO  TaskSetManager:54 - Starting task 1.0 in stage 136.0 (TID 75, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:06 INFO  BlockManagerInfo:54 - Added broadcast_38_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:06 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 14 to 172.28.203.196:58380
+2019-11-23 21:41:08 INFO  TaskSetManager:54 - Finished task 1.0 in stage 136.0 (TID 75) in 1173 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 136.0 (TID 74) in 3459 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:10 INFO  TaskSchedulerImpl:54 - Removed TaskSet 136.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - ResultStage 136 (count at ShortestPath.java:74) finished in 3.465 s
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Job 16 finished: count at ShortestPath.java:74, took 10.119869 s
+2019-11-23 21:41:10 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Registering RDD 64 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Got job 17 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Final stage: ResultStage 153 (count at ShortestPath.java:74)
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 152)
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 152)
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 152 (MapPartitionsRDD[64] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:10 INFO  MemoryStore:54 - Block broadcast_39 stored as values in memory (estimated size 4.6 KB, free 366.0 MB)
+2019-11-23 21:41:10 INFO  MemoryStore:54 - Block broadcast_39_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-11-23 21:41:10 INFO  BlockManagerInfo:54 - Added broadcast_39_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:10 INFO  SparkContext:54 - Created broadcast 39 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:10 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 152 (MapPartitionsRDD[64] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:10 INFO  TaskSchedulerImpl:54 - Adding task set 152.0 with 2 tasks
+2019-11-23 21:41:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 152.0 (TID 76, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:10 INFO  TaskSetManager:54 - Starting task 1.0 in stage 152.0 (TID 77, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:10 INFO  BlockManagerInfo:54 - Added broadcast_39_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:16 INFO  TaskSetManager:54 - Finished task 1.0 in stage 152.0 (TID 77) in 5758 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 152.0 (TID 76) in 6453 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 152.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - ShuffleMapStage 152 (flatMapToPair at ShortestPath.java:76) finished in 6.461 s
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - waiting: Set(ResultStage 153)
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - Submitting ResultStage 153 (MapPartitionsRDD[67] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:16 INFO  MemoryStore:54 - Block broadcast_40 stored as values in memory (estimated size 4.5 KB, free 366.0 MB)
+2019-11-23 21:41:16 INFO  MemoryStore:54 - Block broadcast_40_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:16 INFO  BlockManagerInfo:54 - Added broadcast_40_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:16 INFO  SparkContext:54 - Created broadcast 40 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:16 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 153 (MapPartitionsRDD[67] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:16 INFO  TaskSchedulerImpl:54 - Adding task set 153.0 with 2 tasks
+2019-11-23 21:41:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 153.0 (TID 78, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:16 INFO  TaskSetManager:54 - Starting task 1.0 in stage 153.0 (TID 79, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:16 INFO  BlockManagerInfo:54 - Added broadcast_40_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:16 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 15 to 172.28.203.196:58380
+2019-11-23 21:41:18 INFO  TaskSetManager:54 - Finished task 1.0 in stage 153.0 (TID 79) in 1514 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 153.0 (TID 78) in 3498 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 153.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - ResultStage 153 (count at ShortestPath.java:74) finished in 3.504 s
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Job 17 finished: count at ShortestPath.java:74, took 9.970610 s
+2019-11-23 21:41:20 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Registering RDD 68 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Got job 18 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Final stage: ResultStage 171 (count at ShortestPath.java:74)
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 170)
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 170)
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 170 (MapPartitionsRDD[68] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:20 INFO  MemoryStore:54 - Block broadcast_41 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:41:20 INFO  MemoryStore:54 - Block broadcast_41_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:20 INFO  BlockManagerInfo:54 - Added broadcast_41_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:20 INFO  SparkContext:54 - Created broadcast 41 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:20 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 170 (MapPartitionsRDD[68] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:20 INFO  TaskSchedulerImpl:54 - Adding task set 170.0 with 2 tasks
+2019-11-23 21:41:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 170.0 (TID 80, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:20 INFO  TaskSetManager:54 - Starting task 1.0 in stage 170.0 (TID 81, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:20 INFO  BlockManagerInfo:54 - Added broadcast_41_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:25 INFO  TaskSetManager:54 - Finished task 1.0 in stage 170.0 (TID 81) in 5451 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:27 INFO  TaskSetManager:54 - Finished task 0.0 in stage 170.0 (TID 80) in 6984 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:27 INFO  TaskSchedulerImpl:54 - Removed TaskSet 170.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - ShuffleMapStage 170 (flatMapToPair at ShortestPath.java:76) finished in 6.991 s
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - waiting: Set(ResultStage 171)
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - Submitting ResultStage 171 (MapPartitionsRDD[71] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:27 INFO  MemoryStore:54 - Block broadcast_42 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:41:27 INFO  MemoryStore:54 - Block broadcast_42_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:27 INFO  BlockManagerInfo:54 - Added broadcast_42_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:27 INFO  SparkContext:54 - Created broadcast 42 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:27 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 171 (MapPartitionsRDD[71] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:27 INFO  TaskSchedulerImpl:54 - Adding task set 171.0 with 2 tasks
+2019-11-23 21:41:27 INFO  TaskSetManager:54 - Starting task 0.0 in stage 171.0 (TID 82, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:27 INFO  TaskSetManager:54 - Starting task 1.0 in stage 171.0 (TID 83, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:27 INFO  BlockManagerInfo:54 - Added broadcast_42_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:27 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 16 to 172.28.203.196:58380
+2019-11-23 21:41:28 INFO  TaskSetManager:54 - Finished task 1.0 in stage 171.0 (TID 83) in 1373 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 171.0 (TID 82) in 3194 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 171.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - ResultStage 171 (count at ShortestPath.java:74) finished in 3.199 s
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Job 18 finished: count at ShortestPath.java:74, took 10.195000 s
+2019-11-23 21:41:30 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Registering RDD 72 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Got job 19 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Final stage: ResultStage 190 (count at ShortestPath.java:74)
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 189)
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 189)
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 189 (MapPartitionsRDD[72] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:30 INFO  MemoryStore:54 - Block broadcast_43 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:41:30 INFO  MemoryStore:54 - Block broadcast_43_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:30 INFO  BlockManagerInfo:54 - Added broadcast_43_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:30 INFO  SparkContext:54 - Created broadcast 43 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:30 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 189 (MapPartitionsRDD[72] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:30 INFO  TaskSchedulerImpl:54 - Adding task set 189.0 with 2 tasks
+2019-11-23 21:41:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 189.0 (TID 84, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:30 INFO  TaskSetManager:54 - Starting task 1.0 in stage 189.0 (TID 85, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:30 INFO  BlockManagerInfo:54 - Added broadcast_43_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:37 INFO  TaskSetManager:54 - Finished task 1.0 in stage 189.0 (TID 85) in 6400 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:38 INFO  TaskSetManager:54 - Finished task 0.0 in stage 189.0 (TID 84) in 7437 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:38 INFO  TaskSchedulerImpl:54 - Removed TaskSet 189.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - ShuffleMapStage 189 (flatMapToPair at ShortestPath.java:76) finished in 7.448 s
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - waiting: Set(ResultStage 190)
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - Submitting ResultStage 190 (MapPartitionsRDD[75] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:38 INFO  MemoryStore:54 - Block broadcast_44 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:41:38 INFO  MemoryStore:54 - Block broadcast_44_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:38 INFO  BlockManagerInfo:54 - Added broadcast_44_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:38 INFO  SparkContext:54 - Created broadcast 44 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:38 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 190 (MapPartitionsRDD[75] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:38 INFO  TaskSchedulerImpl:54 - Adding task set 190.0 with 2 tasks
+2019-11-23 21:41:38 INFO  TaskSetManager:54 - Starting task 0.0 in stage 190.0 (TID 86, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:38 INFO  TaskSetManager:54 - Starting task 1.0 in stage 190.0 (TID 87, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:38 INFO  BlockManagerInfo:54 - Added broadcast_44_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:38 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 17 to 172.28.203.196:58380
+2019-11-23 21:41:39 INFO  TaskSetManager:54 - Finished task 1.0 in stage 190.0 (TID 87) in 1655 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 190.0 (TID 86) in 4271 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 190.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - ResultStage 190 (count at ShortestPath.java:74) finished in 4.275 s
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Job 19 finished: count at ShortestPath.java:74, took 11.730727 s
+2019-11-23 21:41:42 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Registering RDD 76 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Got job 20 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Final stage: ResultStage 210 (count at ShortestPath.java:74)
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 209)
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 209)
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 209 (MapPartitionsRDD[76] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:42 INFO  MemoryStore:54 - Block broadcast_45 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:41:42 INFO  MemoryStore:54 - Block broadcast_45_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:42 INFO  BlockManagerInfo:54 - Added broadcast_45_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:42 INFO  SparkContext:54 - Created broadcast 45 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:42 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 209 (MapPartitionsRDD[76] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:42 INFO  TaskSchedulerImpl:54 - Adding task set 209.0 with 2 tasks
+2019-11-23 21:41:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 209.0 (TID 88, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:42 INFO  TaskSetManager:54 - Starting task 1.0 in stage 209.0 (TID 89, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:42 INFO  BlockManagerInfo:54 - Added broadcast_45_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:47 INFO  TaskSetManager:54 - Finished task 1.0 in stage 209.0 (TID 89) in 5051 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 209.0 (TID 88) in 6812 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 209.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - ShuffleMapStage 209 (flatMapToPair at ShortestPath.java:76) finished in 6.829 s
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - waiting: Set(ResultStage 210)
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - Submitting ResultStage 210 (MapPartitionsRDD[79] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:49 INFO  MemoryStore:54 - Block broadcast_46 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:41:49 INFO  MemoryStore:54 - Block broadcast_46_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:49 INFO  BlockManagerInfo:54 - Added broadcast_46_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:49 INFO  SparkContext:54 - Created broadcast 46 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:49 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 210 (MapPartitionsRDD[79] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:49 INFO  TaskSchedulerImpl:54 - Adding task set 210.0 with 2 tasks
+2019-11-23 21:41:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 210.0 (TID 90, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:49 INFO  TaskSetManager:54 - Starting task 1.0 in stage 210.0 (TID 91, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:49 INFO  BlockManagerInfo:54 - Added broadcast_46_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:49 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 18 to 172.28.203.196:58380
+2019-11-23 21:41:51 INFO  TaskSetManager:54 - Finished task 1.0 in stage 210.0 (TID 91) in 1995 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:52 INFO  TaskSetManager:54 - Finished task 0.0 in stage 210.0 (TID 90) in 3690 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:52 INFO  TaskSchedulerImpl:54 - Removed TaskSet 210.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - ResultStage 210 (count at ShortestPath.java:74) finished in 3.696 s
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Job 20 finished: count at ShortestPath.java:74, took 10.538046 s
+2019-11-23 21:41:52 INFO  SparkContext:54 - Starting job: count at ShortestPath.java:74
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Registering RDD 80 (flatMapToPair at ShortestPath.java:76)
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Got job 21 (count at ShortestPath.java:74) with 2 output partitions
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Final stage: ResultStage 231 (count at ShortestPath.java:74)
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 230)
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 230)
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 230 (MapPartitionsRDD[80] at flatMapToPair at ShortestPath.java:76), which has no missing parents
+2019-11-23 21:41:52 INFO  MemoryStore:54 - Block broadcast_47 stored as values in memory (estimated size 4.6 KB, free 365.9 MB)
+2019-11-23 21:41:52 INFO  MemoryStore:54 - Block broadcast_47_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:52 INFO  BlockManagerInfo:54 - Added broadcast_47_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:52 INFO  SparkContext:54 - Created broadcast 47 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:52 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 230 (MapPartitionsRDD[80] at flatMapToPair at ShortestPath.java:76) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:52 INFO  TaskSchedulerImpl:54 - Adding task set 230.0 with 2 tasks
+2019-11-23 21:41:52 INFO  TaskSetManager:54 - Starting task 0.0 in stage 230.0 (TID 92, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:52 INFO  TaskSetManager:54 - Starting task 1.0 in stage 230.0 (TID 93, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7642 bytes)
+2019-11-23 21:41:52 INFO  BlockManagerInfo:54 - Added broadcast_47_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:58 INFO  TaskSetManager:54 - Finished task 1.0 in stage 230.0 (TID 93) in 5364 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:41:59 INFO  TaskSetManager:54 - Finished task 0.0 in stage 230.0 (TID 92) in 6761 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:41:59 INFO  TaskSchedulerImpl:54 - Removed TaskSet 230.0, whose tasks have all completed, from pool 
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - ShuffleMapStage 230 (flatMapToPair at ShortestPath.java:76) finished in 6.776 s
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - running: Set()
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - waiting: Set(ResultStage 231)
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - failed: Set()
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - Submitting ResultStage 231 (MapPartitionsRDD[83] at filter at ShortestPath.java:71), which has no missing parents
+2019-11-23 21:41:59 INFO  MemoryStore:54 - Block broadcast_48 stored as values in memory (estimated size 4.5 KB, free 365.9 MB)
+2019-11-23 21:41:59 INFO  MemoryStore:54 - Block broadcast_48_piece0 stored as bytes in memory (estimated size 2.5 KB, free 365.9 MB)
+2019-11-23 21:41:59 INFO  BlockManagerInfo:54 - Added broadcast_48_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:59 INFO  SparkContext:54 - Created broadcast 48 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:41:59 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 231 (MapPartitionsRDD[83] at filter at ShortestPath.java:71) (first 15 tasks are for partitions Vector(0, 1))
+2019-11-23 21:41:59 INFO  TaskSchedulerImpl:54 - Adding task set 231.0 with 2 tasks
+2019-11-23 21:41:59 INFO  TaskSetManager:54 - Starting task 0.0 in stage 231.0 (TID 94, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:59 INFO  TaskSetManager:54 - Starting task 1.0 in stage 231.0 (TID 95, 172.28.203.196, executor 1, partition 1, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:41:59 INFO  BlockManagerInfo:54 - Added broadcast_48_piece0 in memory on 172.28.203.196:40783 (size: 2.5 KB, free: 366.2 MB)
+2019-11-23 21:41:59 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 19 to 172.28.203.196:58380
+2019-11-23 21:42:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 231.0 (TID 95) in 1701 ms on 172.28.203.196 (executor 1) (1/2)
+2019-11-23 21:42:03 INFO  TaskSetManager:54 - Finished task 0.0 in stage 231.0 (TID 94) in 3436 ms on 172.28.203.196 (executor 1) (2/2)
+2019-11-23 21:42:03 INFO  TaskSchedulerImpl:54 - Removed TaskSet 231.0, whose tasks have all completed, from pool 
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - ResultStage 231 (count at ShortestPath.java:74) finished in 3.441 s
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Job 21 finished: count at ShortestPath.java:74, took 10.228636 s
+2019-11-23 21:42:03 INFO  SparkContext:54 - Starting job: lookup at ShortestPath.java:138
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Got job 22 (lookup at ShortestPath.java:138) with 1 output partitions
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Final stage: ResultStage 252 (lookup at ShortestPath.java:138)
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 251)
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Missing parents: List()
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Submitting ResultStage 252 (MapPartitionsRDD[82] at mapValues at ShortestPath.java:111), which has no missing parents
+2019-11-23 21:42:03 INFO  MemoryStore:54 - Block broadcast_49 stored as values in memory (estimated size 4.4 KB, free 365.9 MB)
+2019-11-23 21:42:03 INFO  MemoryStore:54 - Block broadcast_49_piece0 stored as bytes in memory (estimated size 2.4 KB, free 365.9 MB)
+2019-11-23 21:42:03 INFO  BlockManagerInfo:54 - Added broadcast_49_piece0 in memory on cssmpi1.uwb.edu:34839 (size: 2.4 KB, free: 366.2 MB)
+2019-11-23 21:42:03 INFO  SparkContext:54 - Created broadcast 49 from broadcast at DAGScheduler.scala:1039
+2019-11-23 21:42:03 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 252 (MapPartitionsRDD[82] at mapValues at ShortestPath.java:111) (first 15 tasks are for partitions Vector(0))
+2019-11-23 21:42:03 INFO  TaskSchedulerImpl:54 - Adding task set 252.0 with 1 tasks
+2019-11-23 21:42:03 INFO  TaskSetManager:54 - Starting task 0.0 in stage 252.0 (TID 96, 172.28.203.196, executor 1, partition 0, NODE_LOCAL, 7653 bytes)
+2019-11-23 21:42:03 INFO  BlockManagerInfo:54 - Added broadcast_49_piece0 in memory on 172.28.203.196:40783 (size: 2.4 KB, free: 366.2 MB)
+2019-11-23 21:42:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 252.0 (TID 96) in 2889 ms on 172.28.203.196 (executor 1) (1/1)
+2019-11-23 21:42:06 INFO  TaskSchedulerImpl:54 - Removed TaskSet 252.0, whose tasks have all completed, from pool 
+2019-11-23 21:42:06 INFO  DAGScheduler:54 - ResultStage 252 (lookup at ShortestPath.java:138) finished in 2.895 s
+2019-11-23 21:42:06 INFO  DAGScheduler:54 - Job 22 finished: lookup at ShortestPath.java:138, took 2.903482 s
+from 0 to 1500 takes distance = 41
+Elapsed time = 371589 ms.
+2019-11-23 21:42:06 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2019-11-23 21:42:06 INFO  AbstractConnector:318 - Stopped Spark@5769e7ae{HTTP/1.1,[http/1.1]}{0.0.0.0:4043}
+2019-11-23 21:42:06 INFO  SparkUI:54 - Stopped Spark web UI at http://cssmpi1.uwb.edu:4043
+2019-11-23 21:42:06 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
+2019-11-23 21:42:06 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
+2019-11-23 21:42:06 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-11-23 21:42:06 INFO  MemoryStore:54 - MemoryStore cleared
+2019-11-23 21:42:06 INFO  BlockManager:54 - BlockManager stopped
+2019-11-23 21:42:06 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-11-23 21:42:06 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-11-23 21:42:06 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-11-23 21:42:06 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-11-23 21:42:06 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-5ac880c3-741c-464e-9c99-5586a7bc4967
+2019-11-23 21:42:06 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-4a309b98-6033-43f0-b80c-1750d63109ab
