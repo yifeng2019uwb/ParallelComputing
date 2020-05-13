@@ -1,0 +1,2 @@
+I run the code with different computer node and cores. I also run the code with different K and N. So I got lots of output files. I attached part of output in my report. I created a table to compare the performance with different computer node and cores
+

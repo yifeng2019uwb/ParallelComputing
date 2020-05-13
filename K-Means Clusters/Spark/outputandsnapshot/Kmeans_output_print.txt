@@ -1,0 +1,1206 @@
+2019-12-03 10:57:56 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-12-03 10:57:57 INFO  SparkContext:54 - Running Spark version 2.3.1
+2019-12-03 10:57:57 INFO  SparkContext:54 - Submitted application: K-means
+2019-12-03 10:57:57 INFO  SecurityManager:54 - Changing view acls to: yifengzh_css534
+2019-12-03 10:57:57 INFO  SecurityManager:54 - Changing modify acls to: yifengzh_css534
+2019-12-03 10:57:57 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-12-03 10:57:57 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-12-03 10:57:57 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yifengzh_css534); groups with view permissions: Set(); users  with modify permissions: Set(yifengzh_css534); groups with modify permissions: Set()
+2019-12-03 10:57:57 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 42007.
+2019-12-03 10:57:57 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-12-03 10:57:57 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-12-03 10:57:57 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-12-03 10:57:57 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-12-03 10:57:57 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-44f4251b-b937-4acc-867e-7ae60c20b0f6
+2019-12-03 10:57:57 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2019-12-03 10:57:57 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-12-03 10:57:57 INFO  log:192 - Logging initialized @1660ms
+2019-12-03 10:57:57 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2019-12-03 10:57:57 INFO  Server:414 - Started @1744ms
+2019-12-03 10:57:57 INFO  AbstractConnector:278 - Started ServerConnector@21a5fd96{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-12-03 10:57:57 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@42a9a63e{/jobs,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5bd1ceca{/jobs/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@30c31dd7{/jobs/job,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@596df867{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@c1fca1e{/stages,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@241a53ef{/stages/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@344344fa{/stages/stage,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@615f972{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@285f09de{/stages/pool,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@73393584{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@31500940{/storage,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1827a871{/storage/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48e64352{/storage/rdd,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7249dadf{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4362d7df{/environment,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@66238be2{/environment/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c25b8a7{/executors,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@200606de{/executors/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@750fe12e{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f8908f6{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3e587920{/static,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77b7ffa4{/,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5ed190be{/api,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@41382722{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7dac3fd8{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-12-03 10:57:57 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://cssmpi1.uwb.edu:4040
+2019-12-03 10:57:57 INFO  SparkContext:54 - Added JAR file:/home/yifengzh_css534/Spark/Kmeans_print.jar at spark://cssmpi1.uwb.edu:42007/jars/Kmeans_print.jar with timestamp 1575399477714
+2019-12-03 10:57:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://cssmpi1:58350...
+2019-12-03 10:57:57 INFO  TransportClientFactory:267 - Successfully created connection to cssmpi1/172.28.203.196:58350 after 27 ms (0 ms spent in bootstraps)
+2019-12-03 10:57:57 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20191203105757-0040
+2019-12-03 10:57:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20191203105757-0040/0 on worker-20191202211221-172.28.203.196-35724 (172.28.203.196:35724) with 1 core(s)
+2019-12-03 10:57:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20191203105757-0040/0 on hostPort 172.28.203.196:35724 with 1 core(s), 1024.0 MB RAM
+2019-12-03 10:57:57 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34746.
+2019-12-03 10:57:57 INFO  NettyBlockTransferService:54 - Server created on cssmpi1.uwb.edu:34746
+2019-12-03 10:57:57 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-12-03 10:57:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20191203105757-0040/0 is now RUNNING
+2019-12-03 10:57:57 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, cssmpi1.uwb.edu, 34746, None)
+2019-12-03 10:57:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager cssmpi1.uwb.edu:34746 with 366.3 MB RAM, BlockManagerId(driver, cssmpi1.uwb.edu, 34746, None)
+2019-12-03 10:57:57 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, cssmpi1.uwb.edu, 34746, None)
+2019-12-03 10:57:57 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, cssmpi1.uwb.edu, 34746, None)
+2019-12-03 10:57:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@a567e72{/metrics/json,null,AVAILABLE,@Spark}
+2019-12-03 10:57:58 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2019-12-03 10:57:58 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 236.7 KB, free 366.1 MB)
+2019-12-03 10:57:58 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 366.0 MB)
+2019-12-03 10:57:58 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 22.9 KB, free: 366.3 MB)
+2019-12-03 10:57:58 INFO  SparkContext:54 - Created broadcast 0 from textFile at Kmeans_print.java:42
+2019-12-03 10:57:59 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-12-03 10:57:59 INFO  SparkContext:54 - Starting job: takeSample at Kmeans_print.java:54
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Got job 0 (takeSample at Kmeans_print.java:54) with 2 output partitions
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (takeSample at Kmeans_print.java:54)
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Missing parents: List()
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[2] at map at Kmeans_print.java:45), which has no missing parents
+2019-12-03 10:57:59 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 4.2 KB, free 366.0 MB)
+2019-12-03 10:57:59 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.5 KB, free 366.0 MB)
+2019-12-03 10:57:59 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 2.5 KB, free: 366.3 MB)
+2019-12-03 10:57:59 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:57:59 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at map at Kmeans_print.java:45) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:57:59 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 2 tasks
+2019-12-03 10:58:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.28.203.196:46030) with ID 0
+2019-12-03 10:58:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7893 bytes)
+2019-12-03 10:58:00 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.28.203.196:40686 with 366.3 MB RAM, BlockManagerId(0, 172.28.203.196, 40686, None)
+2019-12-03 10:58:00 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 172.28.203.196:40686 (size: 2.5 KB, free: 366.3 MB)
+2019-12-03 10:58:00 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.28.203.196:40686 (size: 22.9 KB, free: 366.3 MB)
+2019-12-03 10:58:00 INFO  BlockManagerInfo:54 - Added rdd_2_0 in memory on 172.28.203.196:40686 (size: 560.0 B, free: 366.3 MB)
+2019-12-03 10:58:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7893 bytes)
+2019-12-03 10:58:00 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 881 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:00 INFO  BlockManagerInfo:54 - Added rdd_2_1 in memory on 172.28.203.196:40686 (size: 560.0 B, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 54 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 0 (takeSample at Kmeans_print.java:54) finished in 1.810 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 0 finished: takeSample at Kmeans_print.java:54, took 1.885018 s
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: takeSample at Kmeans_print.java:54
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 1 (takeSample at Kmeans_print.java:54) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (takeSample at Kmeans_print.java:54)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 1 (PartitionwiseSampledRDD[3] at takeSample at Kmeans_print.java:54), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 4.9 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.9 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 2.9 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 1 (PartitionwiseSampledRDD[3] at takeSample at Kmeans_print.java:54) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 2, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 8002 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 172.28.203.196:40686 (size: 2.9 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 3, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 8002 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 2) in 54 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 3) in 14 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 1 (takeSample at Kmeans_print.java:54) finished in 0.066 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 1 finished: takeSample at Kmeans_print.java:54, took 0.071009 s
+Print the init centroids
+Cluster 0 : -1.782306582006342 2.3275661692719165
+Cluster 1 : -2.1533016932468687 3.3066274392490778
+Cluster 2 : -1.9334771542441325 2.054740960167284
+The iteration = 0
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 4 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 2 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[4] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[4] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 4, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 5, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 4) in 65 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 5) in 14 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 2 (mapToPair at Kmeans_print.java:67) finished in 0.089 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[7] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 3 (MapPartitionsRDD[7] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 6, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.28.203.196:46030
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 7, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 6) in 84 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 7) in 16 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 3 (collect at Kmeans_print.java:87) finished in 0.106 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 2 finished: collect at Kmeans_print.java:87, took 0.216665 s
+Cluster 0's size = 16
+Cluster centroid = -1.782306582006342 2.3275661692719165
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+2.132741234281336, 1.0867449197390235
+1.7233096151252982, 4.201208195565489
+1.800441430557051, 0.6786265091323437
+-1.8440650600623871, 2.7365116783395536
+-1.438190942095029, 2.716991793228992
+2.670412861796738, 1.4988535843301425
+1.1328039293719456, 3.8767394577975276
+1.8616041127289018, 0.7465122846502691
+1.408488177976248, 3.932704817245169
+2.821657128612107, 1.6323430448880794
+2.078146780083601, 0.80407173492502
+2.1111473905402987, 3.5766044901490077
+1.8813114467698016, 0.9758381444899269
+1.2021324261203716, 1.8730513575538317
+
+group0's new best center: 0.9935312320431288 2.2126546163668217
+
+Cluster 2's size = 3
+Cluster centroid = -1.9334771542441325 2.054740960167284
+1.6113746476178217, -0.09273457417402664
+-1.9334771542441325, 2.054740960167284
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 0.4029628440910069 0.7165536924472357
+
+Cluster 1's size = 11
+Cluster centroid = -2.1533016932468687 3.3066274392490778
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.974637293818743, 3.111333510262754
+-2.333852937000881, 2.8115121212261385
+-1.4936454020303214, 3.0691182102030137
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+-2.1533016932468687, 3.3066274392490778
+1.3567889411199918, 4.364624835694804
+
+group1's new best center: -0.3470363493394048 3.8786004374713827
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : -1.782306582006342 2.3275661692719165
+NewCentroids :      0.9935312320431288 2.2126546163668217
+
+Cluster 1
+Current centroids : -2.1533016932468687 3.3066274392490778
+NewCentroids :      -0.3470363493394048 3.8786004374713827
+
+Cluster 2
+Current centroids : -1.9334771542441325 2.054740960167284
+NewCentroids :      0.4029628440910069 0.7165536924472357
+
+different of centroids = 7.365404365485187
+The iteration = 1
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 8 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 3 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 5 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 4)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 4)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 4 (MapPartitionsRDD[8] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[8] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 8, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 4.0 (TID 9, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 8) in 22 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 4.0 (TID 9) in 10 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 4 (mapToPair at Kmeans_print.java:67) finished in 0.039 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 5)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 5 (MapPartitionsRDD[11] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 6 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 5 (MapPartitionsRDD[11] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 10, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.28.203.196:46030
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 5.0 (TID 11, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 10) in 31 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 5.0 (TID 11) in 13 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 5 (collect at Kmeans_print.java:87) finished in 0.052 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 3 finished: collect at Kmeans_print.java:87, took 0.097684 s
+Cluster 0's size = 5
+Cluster centroid = 0.9935312320431288 2.2126546163668217
+2.132741234281336, 1.0867449197390235
+2.670412861796738, 1.4988535843301425
+2.821657128612107, 1.6323430448880794
+2.1111473905402987, 3.5766044901490077
+1.2021324261203716, 1.8730513575538317
+
+group0's new best center: 2.1876182082701705 1.933519479332017
+
+Cluster 2's size = 6
+Cluster centroid = 0.4029628440910069 0.7165536924472357
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+1.8616041127289018, 0.7465122846502691
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.7939782427760849 0.5499947983953304
+
+Cluster 1's size = 19
+Cluster centroid = -0.3470363493394048 3.8786004374713827
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+1.7233096151252982, 4.201208195565489
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+-1.9334771542441325, 2.054740960167284
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+-2.1533016932468687, 3.3066274392490778
+1.3567889411199918, 4.364624835694804
+
+group1's new best center: -0.4428406366198806 3.5394301875981045
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 0.9935312320431288 2.2126546163668217
+NewCentroids :      2.1876182082701705 1.933519479332017
+
+Cluster 1
+Current centroids : -0.3470363493394048 3.8786004374713827
+NewCentroids :      -0.4428406366198806 3.5394301875981045
+
+Cluster 2
+Current centroids : 0.4029628440910069 0.7165536924472357
+NewCentroids :      1.7939782427760849 0.5499947983953304
+
+different of centroids = 2.979672062524954
+The iteration = 2
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 12 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 4 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 6)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 6)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 6 (MapPartitionsRDD[12] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[12] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 12, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 6.0 (TID 13, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 12) in 22 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 6.0 (TID 13) in 10 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 6 (mapToPair at Kmeans_print.java:67) finished in 0.038 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 7)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 7 (MapPartitionsRDD[15] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 7 (MapPartitionsRDD[15] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 14, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 2 to 172.28.203.196:46030
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 7.0 (TID 15, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 14) in 30 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 7.0 (TID 15) in 21 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 7 (collect at Kmeans_print.java:87) finished in 0.058 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 4 finished: collect at Kmeans_print.java:87, took 0.103555 s
+Cluster 0's size = 4
+Cluster centroid = 2.1876182082701705 1.933519479332017
+2.670412861796738, 1.4988535843301425
+2.821657128612107, 1.6323430448880794
+2.1111473905402987, 3.5766044901490077
+1.2021324261203716, 1.8730513575538317
+
+group0's new best center: 2.2013374517673787 2.1452131192302653
+
+Cluster 2's size = 7
+Cluster centroid = 1.7939782427760849 0.5499947983953304
+2.132741234281336, 1.0867449197390235
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+1.8616041127289018, 0.7465122846502691
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.8423729558482635 0.6266733871587151
+
+Cluster 1's size = 19
+Cluster centroid = -0.4428406366198806 3.5394301875981045
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+1.7233096151252982, 4.201208195565489
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+-1.9334771542441325, 2.054740960167284
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+-2.1533016932468687, 3.3066274392490778
+1.3567889411199918, 4.364624835694804
+
+group1's new best center: -0.4428406366198806 3.5394301875981045
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 2.1876182082701705 1.933519479332017
+NewCentroids :      2.2013374517673787 2.1452131192302653
+
+Cluster 1
+Current centroids : -0.4428406366198806 3.5394301875981045
+NewCentroids :      -0.4428406366198806 3.5394301875981045
+
+Cluster 2
+Current centroids : 1.7939782427760849 0.5499947983953304
+NewCentroids :      1.8423729558482635 0.6266733871587151
+
+different of centroids = 0.3028110640765074
+The iteration = 3
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 16 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 5 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 9 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 8)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 8)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 8 (MapPartitionsRDD[16] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 9 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[16] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 8.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 16, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 8.0 (TID 17, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 16) in 28 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 8.0 (TID 17) in 9 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 8 (mapToPair at Kmeans_print.java:67) finished in 0.039 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 9)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 9 (MapPartitionsRDD[19] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.0 KB, free 365.9 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 10 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 9 (MapPartitionsRDD[19] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 18, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 3 to 172.28.203.196:46030
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 9.0 (TID 19, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 18) in 23 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 9.0 (TID 19) in 13 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 9 (collect at Kmeans_print.java:87) finished in 0.044 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 5 finished: collect at Kmeans_print.java:87, took 0.090743 s
+Cluster 0's size = 5
+Cluster centroid = 2.2013374517673787 2.1452131192302653
+1.7233096151252982, 4.201208195565489
+2.670412861796738, 1.4988535843301425
+2.821657128612107, 1.6323430448880794
+2.1111473905402987, 3.5766044901490077
+1.2021324261203716, 1.8730513575538317
+
+group0's new best center: 2.1057318844389625 2.55641213449731
+
+Cluster 2's size = 7
+Cluster centroid = 1.8423729558482635 0.6266733871587151
+2.132741234281336, 1.0867449197390235
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+1.8616041127289018, 0.7465122846502691
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.8423729558482635 0.6266733871587151
+
+Cluster 1's size = 18
+Cluster centroid = -0.4428406366198806 3.5394301875981045
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+-1.9334771542441325, 2.054740960167284
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+-2.1533016932468687, 3.3066274392490778
+1.3567889411199918, 4.364624835694804
+
+group1's new best center: -0.5631823172723904 3.502664742711028
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 2.2013374517673787 2.1452131192302653
+NewCentroids :      2.1057318844389625 2.55641213449731
+
+Cluster 1
+Current centroids : -0.4428406366198806 3.5394301875981045
+NewCentroids :      -0.5631823172723904 3.502664742711028
+
+Cluster 2
+Current centroids : 1.8423729558482635 0.6266733871587151
+NewCentroids :      1.8423729558482635 0.6266733871587151
+
+different of centroids = 0.5479995932300485
+The iteration = 4
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 20 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 6 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 11 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 10)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 10)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 10 (MapPartitionsRDD[20] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 6.4 KB, free 365.9 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.5 KB, free 365.9 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 78
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 182
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 243
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[20] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 2 tasks
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 236
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 224
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 20, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 172.28.203.196:40686 in memory (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 10.0 (TID 21, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 198
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 66
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 134
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 165
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 103
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 25
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 189
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 91
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 13
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 12
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 20) in 49 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 10.0 (TID 21) in 14 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 10 (mapToPair at Kmeans_print.java:67) finished in 0.091 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 11)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 11 (MapPartitionsRDD[23] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned shuffle 2
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 226
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 125
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 199
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 242
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 56
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 120
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 175
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 93
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 144
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 52
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 112
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 7.8 KB, free 365.9 MB)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 122
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 234
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 172.28.203.196:40686 in memory (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 4.0 KB, free 365.9 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 3.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 12 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 11 (MapPartitionsRDD[23] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 11.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 22, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 207
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 90
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 219
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 105
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 53
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 138
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 187
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 194
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 229
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 110
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 23
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 87
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 221
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 179
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 24
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on 172.28.203.196:40686 in memory (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on 172.28.203.196:40686 in memory (size: 2.5 KB, free: 366.2 MB)
+2019-12-03 10:58:01 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 4 to 172.28.203.196:46030
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on 172.28.203.196:40686 in memory (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 129
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 212
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 21
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 61
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 11.0 (TID 23, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 22) in 44 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 172.28.203.196:40686 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 11.0 (TID 23) in 11 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ResultStage 11 (collect at Kmeans_print.java:87) finished in 0.065 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Job 6 finished: collect at Kmeans_print.java:87, took 0.161115 s
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 55
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 215
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 155
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 5
+Cluster 0's size = 9
+Cluster centroid = 2.1057318844389625 2.55641213449731
+1.7233096151252982, 4.201208195565489
+2.670412861796738, 1.4988535843301425
+1.1328039293719456, 3.8767394577975276
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 38
+1.4513142873092897, 4.228108723299541
+1.408488177976248, 3.932704817245169
+2.821657128612107, 1.6323430448880794
+2.1111473905402987, 3.5766044901490077
+1.2021324261203716, 1.8730513575538317
+1.3567889411199918, 4.364624835694804
+
+group0's new best center: 1.7642283064413653 3.2426931673915105
+
+Cluster 2's size = 7
+Cluster centroid = 1.8423729558482635 0.6266733871587151
+2.132741234281336, 1.0867449197390235
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 178
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+1.8616041127289018, 0.7465122846502691
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.8423729558482635 0.6266733871587151
+
+Cluster 1's size = 14
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 180
+Cluster centroid = -0.5631823172723904 3.502664742711028
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 54
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+1.048291864126934, 5.030924080929878
+-1.9334771542441325, 2.054740960167284
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+-2.1533016932468687, 3.3066274392490778
+
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 37
+group1's new best center: -1.106191217620036 3.3318419667686756
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 2.1057318844389625 2.55641213449731
+NewCentroids :      1.7642283064413653 3.2426931673915105
+
+Cluster 1
+Current centroids : -0.5631823172723904 3.502664742711028
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 57
+NewCentroids :      -1.106191217620036 3.3318419667686756
+
+Cluster 2
+Current centroids : 1.8423729558482635 0.6266733871587151
+NewCentroids :      1.8423729558482635 0.6266733871587151
+
+different of centroids = 1.3357991696269544
+The iteration = 5
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 22
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 3
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 62
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 183
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 2.9 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 172.28.203.196:40686 in memory (size: 2.9 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 109
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 115
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 127
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 81
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 140
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 4
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 86
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 218
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 64
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 107
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 249
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 158
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 195
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 147
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 117
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 151
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 197
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 203
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 220
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on 172.28.203.196:40686 in memory (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 185
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 6
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 101
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 16
+2019-12-03 10:58:01 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 247
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 163
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 167
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 1
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 34
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Registering RDD 24 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Got job 7 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Final stage: ResultStage 13 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 12)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 12)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 12 (MapPartitionsRDD[24] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 145
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 13 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[24] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 12.0 with 2 tasks
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on 172.28.203.196:40686 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 12.0 (TID 24, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 116
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 162
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 181
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 152
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned shuffle 3
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 0
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 36
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 58
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 30
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 193
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 238
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 171
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 169
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 228
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 83
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 176
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 192
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 18
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 157
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 217
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 35
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 118
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 159
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 70
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 59
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 84
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 80
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 96
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 92
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 14
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 173
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on cssmpi1.uwb.edu:34746 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on 172.28.203.196:40686 in memory (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 216
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 204
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 190
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 20
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 245
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 246
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 202
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 29
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 75
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 63
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 149
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 172
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 188
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 146
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 10
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 121
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 11
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 1.0 in stage 12.0 (TID 25, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 12.0 (TID 24) in 31 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned shuffle 0
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 98
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 72
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 143
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 164
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 126
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 237
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 166
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 205
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 108
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 208
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 85
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 150
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 106
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 100
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 95
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 89
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 77
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 223
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 209
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 67
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 133
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 69
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 51
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 161
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 184
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 196
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 241
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 2
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 124
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 244
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 168
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 74
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 235
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 76
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 28
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 113
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 88
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 154
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 19
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 33
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 31
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 230
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 225
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 17
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 174
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 248
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 232
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 186
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 27
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned shuffle 1
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 222
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 206
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 94
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 130
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 32
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 136
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 239
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 177
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 211
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 73
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 200
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 210
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 60
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 82
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 97
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 71
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 111
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 240
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 201
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 79
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 26
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 227
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 213
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 233
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 231
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 15
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 214
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 99
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 102
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 65
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 153
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 68
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 104
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 156
+2019-12-03 10:58:01 INFO  ContextCleaner:54 - Cleaned accumulator 191
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 12.0 (TID 25) in 15 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - ShuffleMapStage 12 (mapToPair at Kmeans_print.java:67) finished in 0.051 s
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - waiting: Set(ResultStage 13)
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting ResultStage 13 (MapPartitionsRDD[27] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:01 INFO  SparkContext:54 - Created broadcast 14 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:01 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 13 (MapPartitionsRDD[27] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:01 INFO  TaskSchedulerImpl:54 - Adding task set 13.0 with 2 tasks
+2019-12-03 10:58:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 13.0 (TID 26, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:01 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 5 to 172.28.203.196:46030
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 13.0 (TID 27, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 13.0 (TID 26) in 27 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 13.0 (TID 27) in 11 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - ResultStage 13 (collect at Kmeans_print.java:87) finished in 0.041 s
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Job 7 finished: collect at Kmeans_print.java:87, took 0.098669 s
+Cluster 0's size = 9
+Cluster centroid = 1.7642283064413653 3.2426931673915105
+1.7233096151252982, 4.201208195565489
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+2.1111473905402987, 3.5766044901490077
+1.3567889411199918, 4.364624835694804
+
+group0's new best center: 1.3727785059043256 4.24340285224828
+
+Cluster 2's size = 10
+Cluster centroid = 1.8423729558482635 0.6266733871587151
+2.132741234281336, 1.0867449197390235
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+2.670412861796738, 1.4988535843301425
+1.8616041127289018, 0.7465122846502691
+2.821657128612107, 1.6323430448880794
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.2021324261203716, 1.8730513575538317
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.959081310746706 0.9390961696883059
+
+Cluster 1's size = 11
+Cluster centroid = -1.106191217620036 3.3318419667686756
+-0.3002248293705443, 4.63059662516857
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+-1.9334771542441325, 2.054740960167284
+-2.1533016932468687, 3.3066274392490778
+
+group1's new best center: -1.6961664780342147 2.9668320349344075
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 1.7642283064413653 3.2426931673915105
+NewCentroids :      1.3727785059043256 4.24340285224828
+
+Cluster 1
+Current centroids : -1.106191217620036 3.3318419667686756
+NewCentroids :      -1.6961664780342147 2.9668320349344075
+
+Cluster 2
+Current centroids : 1.8423729558482635 0.6266733871587151
+NewCentroids :      1.959081310746706 0.9390961696883059
+
+different of centroids = 2.1018176875626216
+The iteration = 6
+2019-12-03 10:58:02 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Registering RDD 28 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Got job 8 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Final stage: ResultStage 15 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 14)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 14)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 14 (MapPartitionsRDD[28] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  SparkContext:54 - Created broadcast 15 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 14 (MapPartitionsRDD[28] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Adding task set 14.0 with 2 tasks
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 14.0 (TID 28, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 14.0 (TID 29, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 14.0 (TID 28) in 27 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 14.0 (TID 29) in 13 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - ShuffleMapStage 14 (mapToPair at Kmeans_print.java:67) finished in 0.047 s
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - waiting: Set(ResultStage 15)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting ResultStage 15 (MapPartitionsRDD[31] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  SparkContext:54 - Created broadcast 16 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 15 (MapPartitionsRDD[31] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Adding task set 15.0 with 2 tasks
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 15.0 (TID 30, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 6 to 172.28.203.196:46030
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 15.0 (TID 31, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 15.0 (TID 30) in 30 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 15.0 (TID 31) in 10 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 15.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - ResultStage 15 (collect at Kmeans_print.java:87) finished in 0.045 s
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Job 8 finished: collect at Kmeans_print.java:87, took 0.099465 s
+Cluster 0's size = 10
+Cluster centroid = 1.3727785059043256 4.24340285224828
+-0.3002248293705443, 4.63059662516857
+1.7233096151252982, 4.201208195565489
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+2.1111473905402987, 3.5766044901490077
+1.3567889411199918, 4.364624835694804
+
+group0's new best center: 1.2054781723768389 4.282122229540309
+
+Cluster 2's size = 10
+Cluster centroid = 1.959081310746706 0.9390961696883059
+2.132741234281336, 1.0867449197390235
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+2.670412861796738, 1.4988535843301425
+1.8616041127289018, 0.7465122846502691
+2.821657128612107, 1.6323430448880794
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.2021324261203716, 1.8730513575538317
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.959081310746706 0.9390961696883059
+
+Cluster 1's size = 10
+Cluster centroid = -1.6961664780342147 2.9668320349344075
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+-1.9334771542441325, 2.054740960167284
+-2.1533016932468687, 3.3066274392490778
+
+group1's new best center: -1.835760642900582 2.800455575910991
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 1.3727785059043256 4.24340285224828
+NewCentroids :      1.2054781723768389 4.282122229540309
+
+Cluster 1
+Current centroids : -1.6961664780342147 2.9668320349344075
+NewCentroids :      -1.835760642900582 2.800455575910991
+
+Cluster 2
+Current centroids : 1.959081310746706 0.9390961696883059
+NewCentroids :      1.959081310746706 0.9390961696883059
+
+different of centroids = 0.3889035882029842
+The iteration = 7
+2019-12-03 10:58:02 INFO  SparkContext:54 - Starting job: collect at Kmeans_print.java:87
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Registering RDD 32 (mapToPair at Kmeans_print.java:67)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Got job 9 (collect at Kmeans_print.java:87) with 2 output partitions
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Final stage: ResultStage 17 (collect at Kmeans_print.java:87)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 16)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 16)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 16 (MapPartitionsRDD[32] at mapToPair at Kmeans_print.java:67), which has no missing parents
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 6.4 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 3.5 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  SparkContext:54 - Created broadcast 17 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ShuffleMapStage 16 (MapPartitionsRDD[32] at mapToPair at Kmeans_print.java:67) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Adding task set 16.0 with 2 tasks
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 16.0 (TID 32, 172.28.203.196, executor 0, partition 0, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on 172.28.203.196:40686 (size: 3.5 KB, free: 366.3 MB)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 16.0 (TID 33, 172.28.203.196, executor 0, partition 1, PROCESS_LOCAL, 7882 bytes)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 16.0 (TID 32) in 22 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 16.0 (TID 33) in 11 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 16.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - ShuffleMapStage 16 (mapToPair at Kmeans_print.java:67) finished in 0.040 s
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - running: Set()
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - waiting: Set(ResultStage 17)
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - failed: Set()
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting ResultStage 17 (MapPartitionsRDD[35] at mapValues at Kmeans_print.java:77), which has no missing parents
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 7.8 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on cssmpi1.uwb.edu:34746 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:02 INFO  SparkContext:54 - Created broadcast 18 from broadcast at DAGScheduler.scala:1039
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 17 (MapPartitionsRDD[35] at mapValues at Kmeans_print.java:77) (first 15 tasks are for partitions Vector(0, 1))
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Adding task set 17.0 with 2 tasks
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 17.0 (TID 34, 172.28.203.196, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:02 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on 172.28.203.196:40686 (size: 4.0 KB, free: 366.2 MB)
+2019-12-03 10:58:02 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 7 to 172.28.203.196:46030
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 17.0 (TID 35, 172.28.203.196, executor 0, partition 1, NODE_LOCAL, 7653 bytes)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 17.0 (TID 34) in 27 ms on 172.28.203.196 (executor 0) (1/2)
+2019-12-03 10:58:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 17.0 (TID 35) in 11 ms on 172.28.203.196 (executor 0) (2/2)
+2019-12-03 10:58:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 17.0, whose tasks have all completed, from pool 
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - ResultStage 17 (collect at Kmeans_print.java:87) finished in 0.042 s
+2019-12-03 10:58:02 INFO  DAGScheduler:54 - Job 9 finished: collect at Kmeans_print.java:87, took 0.090566 s
+Cluster 0's size = 10
+Cluster centroid = 1.2054781723768389 4.282122229540309
+-0.3002248293705443, 4.63059662516857
+1.7233096151252982, 4.201208195565489
+1.1328039293719456, 3.8767394577975276
+1.4513142873092897, 4.228108723299541
+1.048291864126934, 5.030924080929878
+1.408488177976248, 3.932704817245169
+1.1982016949192078, 4.470624491135523
+0.9246606526497161, 4.509086578417576
+2.1111473905402987, 3.5766044901490077
+1.3567889411199918, 4.364624835694804
+
+group0's new best center: 1.2054781723768389 4.282122229540309
+
+Cluster 2's size = 10
+Cluster centroid = 1.959081310746706 0.9390961696883059
+2.132741234281336, 1.0867449197390235
+1.6113746476178217, -0.09273457417402664
+1.800441430557051, 0.6786265091323437
+2.670412861796738, 1.4988535843301425
+1.8616041127289018, 0.7465122846502691
+2.821657128612107, 1.6323430448880794
+2.078146780083601, 0.80407173492502
+1.8813114467698016, 0.9758381444899269
+1.2021324261203716, 1.8730513575538317
+1.5309910388993315, 0.18765469134844925
+
+group2's new best center: 1.959081310746706 0.9390961696883059
+
+Cluster 1's size = 10
+Cluster centroid = -1.835760642900582 2.800455575910991
+-1.5409951273912328, 3.1320481965983316
+-1.863134237109881, 2.7381056805628523
+-1.782306582006342, 2.3275661692719165
+-1.974637293818743, 3.111333510262754
+-1.8440650600623871, 2.7365116783395536
+-2.333852937000881, 2.8115121212261385
+-1.438190942095029, 2.716991793228992
+-1.4936454020303214, 3.0691182102030137
+-1.9334771542441325, 2.054740960167284
+-2.1533016932468687, 3.3066274392490778
+
+group1's new best center: -1.835760642900582 2.800455575910991
+
+Print the previous centroids and new centroids
+Cluster 0
+Current centroids : 1.2054781723768389 4.282122229540309
+NewCentroids :      1.2054781723768389 4.282122229540309
+
+Cluster 1
+Current centroids : -1.835760642900582 2.800455575910991
+NewCentroids :      -1.835760642900582 2.800455575910991
+
+Cluster 2
+Current centroids : 1.959081310746706 0.9390961696883059
+NewCentroids :      1.959081310746706 0.9390961696883059
+
+different of centroids = 0.0
+Elapsed time = 4104 ms.
+2019-12-03 10:58:02 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2019-12-03 10:58:02 INFO  AbstractConnector:318 - Stopped Spark@21a5fd96{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-12-03 10:58:02 INFO  SparkUI:54 - Stopped Spark web UI at http://cssmpi1.uwb.edu:4040
+2019-12-03 10:58:02 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
+2019-12-03 10:58:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
+2019-12-03 10:58:02 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-12-03 10:58:02 INFO  MemoryStore:54 - MemoryStore cleared
+2019-12-03 10:58:02 INFO  BlockManager:54 - BlockManager stopped
+2019-12-03 10:58:02 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-12-03 10:58:02 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-12-03 10:58:02 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-12-03 10:58:02 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-12-03 10:58:02 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-a9cebc22-a98e-4350-b9e6-c51f434430a4
+2019-12-03 10:58:02 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-61ec2da1-9edf-4864-8a20-3407f2692b16
